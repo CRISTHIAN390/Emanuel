@@ -24,10 +24,10 @@
     }
 
     .top-border {
-        border-top: 6px solid #FFD700;
-        border-bottom: 2px solid #FFD700;
-        border-left: 1px solid #FFD700;
-        border-right: 1px solid #FFD700;
+        border-top: 4px solid #FBBF24;
+        border-bottom: 2px solid #ffd900;
+        border-left: 1px solid #ffd900;
+        border-right: 1px solid #ffd900;
     }
 
 
@@ -54,7 +54,7 @@
         margin-top: 10px;
         margin-bottom: 24px;
         border: 2px solid transparent;
-        border-radius: 8px;
+        border-radius: 5px;
         transition: all 0.3s ease;
         color: #4a5568;
         text-align: center;
@@ -62,9 +62,8 @@
 
     .nav-item:hover,
     .nav-item.active {
-        background-color: #FFD700;
-        color: white;
-        border: 2px solid #FFD700;
+        background-color: #FBBF24;
+        color: white border: 2px solid #FBBF24;
         transition: all 0.3s ease;
         //MEJORA DE LETRA
         letter-spacing: 1px;
@@ -100,8 +99,9 @@
     }
 
     .submenu a:hover {
-        background-color: #FFD700;
-        color: white;
+        background-color: #FBBF24;
+
+
     }
 
     .nav-item:hover .submenu {
@@ -115,34 +115,36 @@
     <header class="bg-white shadow-md fixed top-0 w-full z-20 top-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <!-- Logo -->
-            <div class="flex items-center logo">
+            <div class="flex justify-center sm:justify-start w-full sm:w-auto items-center logo">
                 <img src="/img/logo.png" alt="Grupo Emanuel" class="h-12">
             </div>
 
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="#" class="nav-item active">Inicio</a>
+                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
                 <div class="relative nav-item">
-                    <a href="#" class="nav-item">Nosotros</a>
+                    <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
+                        <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
+                    </a>
                     <div class="submenu">
                         <a href="#">Nosotros</a>
                         <a href="#">Vision y Mision</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item">Servicios</a>
-                <a href="#" class="nav-item">Blog</a>
-                <a href="#" class="nav-item">Contacto</a>
+                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Servicios</a>
+                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Blog</a>
+                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
 
             <!-- Botón de menú móvil -->
             <button id="menu-button" class="md:hidden">
-                <i class="fas fa-bars text-gray-800 text-xl"></i>
+                <i class="fas fa-bars text-gray-900 text-xl"></i>
             </button>
         </div>
 
         <!-- Menú lateral para pantallas pequeñas -->
         <div id="mobile-menu"
-            class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
+            class="fixed top-0 right-0 w-64 h-full bg-gray-600 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
             <div class="flex justify-between items-center p-4">
                 <span class="text-lg font-semibold">Menú</span>
                 <button id="close-menu-button" class="text-white focus:outline-none">
@@ -154,181 +156,177 @@
                 </button>
             </div>
             <nav class="mt-4">
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Inicio</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Nosotros</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Productos</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Servicios</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Clientes</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Blog</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-500 hover:text-black">Contacto</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Nosotros</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicios</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Clientes</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Blog</a>
+                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
             </nav>
         </div>
     </header><br><br><br>
 
     <!-- Cuerpo -->
-    <main class="relative mt-6" style="background: #faf8ef">
+    <section class="relative mt-6 bg-white">
         <!-- Carrusel -->
-        <div class="carousel-container bg-cover bg-center">
-            <div class="relative mt-4 h-full">
-                <div class="overflow-hidden relative h-full">
+
+        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6"
+            style="border-bottom: 5px solid #ffd900d4">
+            <div class="relative mt-4 border-b-4 border-[#ffd900d4] h-[300px] lg:h-[500px]">
+                <div class="overflow-hidden h-full">
                     <div class="flex transition-transform duration-300 h-full" id="carousel">
-                        <div class="flex-none w-full relative h-full">
-                            <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1" class="carousel-image">
+                        <div class="flex-none w-full h-full">
+                            <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
+                                class="carousel-image object-cover w-full h-full">
                         </div>
                         <div class="flex-none w-full h-full">
-                            <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2" class="carousel-image">
+                            <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
+                                class="carousel-image object-cover w-full h-full">
                         </div>
                         <div class="flex-none w-full h-full">
-                            <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3" class="carousel-image">
+                            <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
+                                class="carousel-image object-cover w-full h-full">
                         </div>
                         <div class="flex-none w-full h-full">
-                            <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4" class="carousel-image">
+                            <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
+                                class="carousel-image object-cover w-full h-full">
                         </div>
                     </div>
                 </div>
                 <button id="prev"
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white p-2 rounded shadow z-10">❮</button>
-                <button id="next"
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white p-2 rounded shadow z-10">❯</button>
-            </div>
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+            ❮
+        </button>
+        <button id="next"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+            ❯
+        </button>
+         </div>
         </div>
+
         <!-- Añadir contenido -->
-        <div class="container mx-auto px-4 py-8">
-            <h2 class="text-center text-2xl font-bold mb-6">GRUPO EMANUEL</h2>
-            <p class="text-center text-gray-600 mb-8">
-                Más de 10 años de experiencia proveyendo productos para el Sector Construcción, Industrial,
-                Minero, Logístico y Agroindustria.
-            </p>
-            <div class="grid gap-6 md:grid-cols-2">
-                <!-- Imágenes y Brochure -->
-                <div class="relative space-y-4">
-                    <img src="/img/carrusel/equipo.jpg" alt="Equipo"
-                        class="mx-auto w-[350px] h-[350px]   rounded shadow-lg">
+        <div class="container mx-auto max-w-6xl px-4 py-8">
+            <div
+                class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-start text-center md:text-left p-6 hover:shadow-xl transition-shadow 
+                 duration-300">
+
+                <!-- Imagen -->
+                <div class="w-full md:w-1/2 lg:w-4/12 mb-4 md:mb-0 p-8">
+                    <img src="/img/carrusel/equipo.jpg" alt="Servicentro"
+                        class="mx-auto md:mx-0 w-full h-[250px] object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
                 </div>
 
-                <!-- Contenido de Texto -->
-                <div class="space-y-6">
-                    <!-- Sobre Nosotros -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-800">Sobre Nosotros</h2>
-                        <p class="text-gray-600 mt-2">
-                            Emanuel R.L.G, es un grupo privados fundada en el año 2008, dedicada a la Gestión ferretera,
-                            proyectos y/o formalización de actividades en curso de empresas que operan en diversos
-                            sectores productivos a nivel nacional.
-                        </p>
-                    </div>
+                <!-- Texto de descripción -->
+                <div class="w-full md:w-1/2 lg:w-9/12 p-6">
 
-                    <!-- Misión -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-800">Misión</h2>
-                        <p class="text-gray-600 mt-2">
-                            Somos un equipo multidisciplinario de especialistas en consultoría ambiental, legal y
-                            administrativa, orientados a proporcionar las mejores soluciones integrales a los diversos
-                            retos de cada proyecto que emprenden nuestros clientes.
-                        </p>
+                    <!-- Logo -->
+                    <div class="flex items-center logo">
+                        <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
                     </div>
-                    <!-- Vision -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-800">Vision</h2>
-                        <p class="text-gray-600 mt-2">
-                            Somos un equipo multidisciplinario de especialistas en consultoría ambiental, legal y
-                            administrativa, orientados a proporcionar las mejores soluciones integrales a los diversos
-                            retos de cada proyecto que emprenden nuestros clientes.
-                        </p>
-                    </div>
+                    <br>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Somos Grupo Emanuel SRL, una empresa peruana que nace con la misión de brindar servicios
+                        generales. Somos una empresa formada por profesionales con una experiencia sólida de más de
+                        16
+                        años, con el sueño de buscar las necesidades del mercado y convertirnos en generadores de
+                        cambios.
+                    </p>
 
-                    <!-- Botón Más de Nosotros -->
-                    <a href="/sobre-nosotros"
-                        class="inline-flex items-center px-4 py-2 bg-blue-800 text-white rounded shadow-md hover:bg-blue-700 transition">
-                        Más de Nosotros →
-                    </a>
+                    <!-- Sección de estadísticas -->
+                    <div
+                        class="bg-yellow-400 rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold">+15</span>
+                            <span class="text-sm">Años de experiencia</span>
+                        </div>
+                        <hr class="border-t border-white my-4 md:hidden">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold">+350</span>
+                            <span class="text-sm">Clientes Satisfechos</span>
+                        </div>
+                        <hr class="border-t border-white my-4 md:hidden">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold">+400</span>
+                            <span class="text-sm">Proyectos ejecutados</span>
+                        </div>
+                        <hr class="border-t border-white my-4 md:hidden">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold">+10</span>
+                            <span class="text-sm">Profesionales Calificados</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <!-- Sección Sobre servicios -->
-        <div class="container mx-auto px-4 py-8">
-            <h2 class="text-left text-3xl font-bold text-gray-800 mb-6">Nuestros Servicios</h2>
-            <div class="flex flex-col items-center space-y-6">
-                <!-- Fila 1 (3 tarjetas) -->
-                <div class="grid gap-6 md:grid-cols-3 md:justify-center">
+        <div class="w-full bg-gradient-to-b from-yellow-500 to-black text-white py-8">
+            <div class="container mx-auto px-4">
+                <h2 class="text-center text-3xl font-bold mb-6">Nuestros Servicios</h2>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 p-8">
                     <!-- Tarjeta 1 -->
-                    <div
-                        class="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-lg rounded-lg overflow-hidden text-center p-6 hover:shadow-xl transition-shadow duration-300">
-                        <img src="/img/servicios/sareli.jpg" alt="Servicios Generales Gabriel & Zareli SAC"
-                            class="mx-auto w-[245px] h-[200px] object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-lg text-blue-900 mb-2">Servicios Generales Gabriel & Zareli SAC</h3>
-                        <p class="text-gray-700">
-                            Contamos con un amplio stock de materiales de construcción habilitada en las especies más
-                            comerciales para la construcción y mantenimiento de terrenos.
-                        </p>
+                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                        <img src="/img/servicios/sareli.jpg" alt="Materiales de Construccion"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Materiales de
+                                Construccion</h3>
+                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                        </div>
                     </div>
 
                     <!-- Tarjeta 2 -->
-                    <div
-                        class="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-lg rounded-lg overflow-hidden text-center p-6 hover:shadow-xl transition-shadow duration-300">
-                        <img src="/img/servicios/hotel.jpg" alt="Hotel Emanuel"
-                            class="mx-auto w-[245px] h-[200px] object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-lg text-blue-900 mb-2">Hotel Emanuel</h3>
-                        <p class="text-gray-700">
-                            Contamos con mix variado de triplay para construcción: lupuna nacional, Fenólico, Fenólico
-                            doble Film, OSB y MDF, con nuestra asesoría especializada podrá elegir el más adecuado y
-                            <span class="font-semibold">reducir su presupuesto de obra hasta en un 45%</span>.
-                        </p>
+                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                        <img src="/img/servicios/hotel.jpg" alt="Hotel"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2">Hotel</h3>
+                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                        </div>
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div
-                        class="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-lg rounded-lg overflow-hidden text-center p-6 hover:shadow-xl transition-shadow duration-300">
-                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo triple G"
-                            class="mx-auto w-[245px] h-[200px] object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-lg text-blue-900 mb-2">Complejo deportivo triple G</h3>
-                        <p class="text-gray-700">
-                            Fabricamos parihuelas/pallets a medida, modelo y especies según el requerimiento del
-                            cliente. Para uso local y para exportación.
-                        </p>
+                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2">Complejo deportivo</h3>
+                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Fila 2 (2 tarjetas) -->
-                <div class="grid gap-6 md:grid-cols-2 md:justify-center">
                     <!-- Tarjeta 4 -->
-                    <div
-                        class="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-lg rounded-lg overflow-hidden text-center p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
-                            class="mx-auto w-[245px] h-[200px] object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-lg text-blue-900 mb-2">Distribuidora Ferreteria</h3>
-                        <p class="text-gray-700">
-                            Fabricamos parihuelas/pallets a medida, modelo y especies según el requerimiento del
-                            cliente. Para uso local y para exportación (Certificación SENASA y especificaciones técnicas
-                            requeridas).
-                        </p>
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2">Materiales</h3>
+                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                        </div>
                     </div>
 
                     <!-- Tarjeta 5 -->
-                    <div
-                        class="bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 shadow-lg rounded-lg overflow-hidden text-center p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/servicentro.jpg" alt="Servicentro"
-                            class="mx-auto w-[245px] h-[200px] object-cover rounded-md mb-4">
-                        <h3 class="font-bold text-lg text-blue-900 mb-2">Servicentro</h3>
-                        <p class="text-gray-700">
-                            Fabricamos parihuelas/pallets a medida, modelo y especies según el requerimiento del
-                            cliente. Para uso local y para exportación (Certificación SENASA y especificaciones técnicas
-                            requeridas).
-                        </p>
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2">Servicentro</h3>
+                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-    </main>
+    </section>
 
     <!-- Footer -->
     <footer>
 
-        <div class="bg-gray-300 w-full py-8">
+        <div class="bg-gray-200 w-full py-8">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap md:flex-nowrap justify-around items-start">
                     <!-- Menú de Navegación -->
@@ -398,11 +396,12 @@
         </div>
 
 
-        <div class="bg-white w-full py-4" style="text-align: center">
+        <div class="bg-white w-full py-4" style="text-align: center;background: black">
             <div class="container mx-auto px-4">
                 <!-- Logo y Derechos Reservados -->
                 <div class="flex flex-col items-center text-black">
-                    <p class="text-sm">2024 <span class="font-semibold">Fundación Emanuel</span>. Todos los derechos
+                    <p class="text-sm" style="color: white">2024 <span class="font-semibold">Fundación
+                            Emanuel</span>. Todos los derechos
                         reservados</p>
                     <a href="#" class="text-red-600 text-sm  ">Políticas de privacidad y protección de datos</a>
                 </div>
