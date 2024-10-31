@@ -123,20 +123,32 @@
             <nav class="hidden md:flex space-x-4 items-center">
                 <a href="#"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
+                    <div class="relative nav-item">
+                        <a href="#"
+                            class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
+                            <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
+                        </a>
+                        <div class="submenu">
+                            <a href="#">Nuestro Equipo</a>
+                            <a href="#">Mision,Vision y valores</a>
+                            <a href="#">Responsabilidad Social Corporativa</a>
+                        </div>
+                    </div>
                 <div class="relative nav-item">
                     <a href="#"
-                        class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
+                        class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Servicios</span>
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="#">Nosotros</a>
-                        <a href="#">Vision y Mision</a>
+                        <a href="#">Materiales de Construccion</a>
+                        <a href="#">Hotel</a>
+                        <a href="#">Complejo deportivo</a>
+                        <a href="#">ProFerretería</a>
+                        <a href="#">Servicentro</a>
                     </div>
                 </div>
                 <a href="#"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Servicios</a>
-                <a href="#"
-                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Blog</a>
                 <a href="#"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
@@ -174,7 +186,8 @@
     <!-- Cuerpo -->
     <section class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6" style="border-bottom: 5px solid #ffd900d4">
+        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6"
+            style="border-bottom: 5px solid #ffd900d4">
             <div class="relative  border-b-4 border-[#ffd900d4] h-[300px] lg:h-[460px]">
                 <div class="overflow-hidden h-full">
                     <div class="flex transition-transform duration-300 h-full" id="carousel">
@@ -229,10 +242,10 @@
                     <br>
                     <p class="text-gray-700 mb-6 leading-relaxed text-justify">
                         En Grupo Emanuel SRL, nos dedicamos a brindar servicios generales
-                         con un firme compromiso de excelencia. Somos un equipo de profesionales 
-                         con más de 16 años de sólida experiencia en el sector, impulsados por la
-                          misión de identificar y satisfacer las necesidades del mercado, transformándonos
-                           en agentes de cambio.
+                        con un firme compromiso de excelencia. Somos un equipo de profesionales
+                        con más de 16 años de sólida experiencia en el sector, impulsados por la
+                        misión de identificar y satisfacer las necesidades del mercado, transformándonos
+                        en agentes de cambio.
                     </p>
 
                     <!-- Sección de estadísticas -->
@@ -284,7 +297,7 @@
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2">Hotel</h3>
+                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Hotel</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
@@ -295,7 +308,7 @@
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2">Complejo deportivo</h3>
+                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Complejo deportivo</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
@@ -306,7 +319,7 @@
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2">Materiales</h3>
+                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">ProFerretería</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
