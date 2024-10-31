@@ -40,7 +40,7 @@
     }
 
     .carousel-container {
-        max-height: 450px;
+        max-height: 100%;
     }
 
     .carousel-image {
@@ -116,14 +116,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <!-- Logo -->
             <div class="flex justify-center sm:justify-start w-full sm:w-auto items-center logo">
-                <img src="/img/logo.png" alt="Grupo Emanuel" class="h-12">
+                <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
             </div>
 
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
+                <a href="#"
+                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
                 <div class="relative nav-item">
-                    <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
+                    <a href="#"
+                        class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
@@ -131,9 +133,12 @@
                         <a href="#">Vision y Mision</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Servicios</a>
-                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Blog</a>
-                <a href="#" class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
+                <a href="#"
+                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Servicios</a>
+                <a href="#"
+                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Blog</a>
+                <a href="#"
+                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
 
             <!-- Botón de menú móvil -->
@@ -167,12 +172,10 @@
     </header><br><br><br>
 
     <!-- Cuerpo -->
-    <section class="relative mt-6 bg-white">
+    <section class="relative mt-4 bg-white">
         <!-- Carrusel -->
-
-        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6"
-            style="border-bottom: 5px solid #ffd900d4">
-            <div class="relative mt-4 border-b-4 border-[#ffd900d4] h-[300px] lg:h-[500px]">
+        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6" style="border-bottom: 5px solid #ffd900d4">
+            <div class="relative  border-b-4 border-[#ffd900d4] h-[300px] lg:h-[460px]">
                 <div class="overflow-hidden h-full">
                     <div class="flex transition-transform duration-300 h-full" id="carousel">
                         <div class="flex-none w-full h-full">
@@ -194,21 +197,21 @@
                     </div>
                 </div>
                 <button id="prev"
-                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
-            ❮
-        </button>
-        <button id="next"
-                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
-            ❯
-        </button>
-         </div>
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                    ❮
+                </button>
+                <button id="next"
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                    ❯
+                </button>
+            </div>
         </div>
 
         <!-- Añadir contenido -->
         <div class="container mx-auto max-w-6xl px-4 py-8">
             <div
                 class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-start text-center md:text-left p-6 hover:shadow-xl transition-shadow 
-                 duration-300">
+                 duration-500">
 
                 <!-- Imagen -->
                 <div class="w-full md:w-1/2 lg:w-4/12 mb-4 md:mb-0 p-8">
@@ -224,19 +227,19 @@
                         <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
                     </div>
                     <br>
-                    <p class="text-gray-700 mb-6 leading-relaxed">
-                        Somos Grupo Emanuel SRL, una empresa peruana que nace con la misión de brindar servicios
-                        generales. Somos una empresa formada por profesionales con una experiencia sólida de más de
-                        16
-                        años, con el sueño de buscar las necesidades del mercado y convertirnos en generadores de
-                        cambios.
+                    <p class="text-gray-700 mb-6 leading-relaxed text-justify">
+                        En Grupo Emanuel SRL, nos dedicamos a brindar servicios generales
+                         con un firme compromiso de excelencia. Somos un equipo de profesionales 
+                         con más de 16 años de sólida experiencia en el sector, impulsados por la
+                          misión de identificar y satisfacer las necesidades del mercado, transformándonos
+                           en agentes de cambio.
                     </p>
 
                     <!-- Sección de estadísticas -->
                     <div
                         class="bg-yellow-400 rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
                         <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+15</span>
+                            <span class="text-3xl font-bold">+16</span>
                             <span class="text-sm">Años de experiencia</span>
                         </div>
                         <hr class="border-t border-white my-4 md:hidden">
@@ -251,7 +254,7 @@
                         </div>
                         <hr class="border-t border-white my-4 md:hidden">
                         <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+10</span>
+                            <span class="text-3xl font-bold">+15</span>
                             <span class="text-sm">Profesionales Calificados</span>
                         </div>
                     </div>
@@ -428,7 +431,7 @@
         };
 
         // Avance automático cada 4 segundos
-        setInterval(nextSlide, 4000);
+        setInterval(nextSlide, 4500);
 
         nextButton.addEventListener('click', () => {
             nextSlide();
