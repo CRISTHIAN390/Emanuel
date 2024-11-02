@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>GrupoEmanuel</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -56,7 +57,7 @@
                     <div class="submenu">
                         <a href="{{ route('cat_rutaEq') }}">Nuestro Equipo</a>
                         <a href="{{ route('cat_rutaVis') }}">Mision,Vision y valores</a>
-                        <a href="#">Responsabilidad Social Corporativa</a>
+                        <a href="{{ route('cat_rutarsc') }}">Responsabilidad Social Corporativa</a>
                     </div>
                 </div>
                 <div class="relative nav-item">
@@ -72,8 +73,7 @@
                         <a href="#">Servicentro</a>
                     </div>
                 </div>
-                <a href="#"
-                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Servicios</a>
+            
                 <a href="#"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
@@ -109,11 +109,11 @@
                     </button>
                     <!-- Opciones desplegables de Nosotros -->
                     <div id="services-submenu" class="hidden pl-6">
-                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
+                        <a href="{{route('cat_rutaEq')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
+                        <a href="{{route('cat_rutaVis')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
+                        <a href="{{ route('cat_rutarsc') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
                             Social Corporativa </a>
                         
                     </div>

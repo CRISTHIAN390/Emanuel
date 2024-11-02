@@ -13,6 +13,9 @@ class RutasController extends Controller
     public function Vision(){
         return view("CamposNav.Vision");
     }
+    public function Responsabilidad(){
+        return view("CamposNav.rsc");
+    }
 
     
 }
