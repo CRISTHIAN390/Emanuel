@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <style>
@@ -45,7 +46,7 @@
 
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="#"
+                <a href="{{route('home')}}"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
                 <div class="relative nav-item">
                     <a href="#"
@@ -53,8 +54,8 @@
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="#">Nuestro Equipo</a>
-                        <a href="#">Mision,Vision y valores</a>
+                        <a href="{{route('cat_rutaEq') }}">Nuestro Equipo</a>
+                        <a href="{{route('cat_rutaVis') }}">Mision,Vision y valores</a>
                         <a href="#">Responsabilidad Social Corporativa</a>
                     </div>
                 </div>
@@ -115,7 +116,7 @@
     <!-- Footer -->
     <footer>
 
-        <div class="bg-gray-200 w-full py-8">
+        <div class="bg-gray-300 w-full py-8">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap md:flex-nowrap justify-around items-start">
                     <!-- Menú de Navegación -->
@@ -198,7 +199,26 @@
         </div>
     </footer>
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.getElementById("menu-button");
+            const closeMenuButton = document.getElementById("close-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+    
+            // Abre el menú al hacer clic en el botón de menú
+            menuButton.addEventListener("click", function () {
+                mobileMenu.classList.remove("translate-x-full");
+                mobileMenu.classList.add("translate-x-0");
+            });
+    
+            // Cierra el menú al hacer clic en el botón de cerrar
+            closeMenuButton.addEventListener("click", function () {
+                mobileMenu.classList.remove("translate-x-0");
+                mobileMenu.classList.add("translate-x-full");
+            });
+        });
+    </script>
+    
 
 </body>
 

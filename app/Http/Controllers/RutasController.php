@@ -7,7 +7,12 @@ use Illuminate\Http\Request;
 class RutasController extends Controller
 {
     
-    public function index(){
-        return view("layout.plantilla");
+    public function NuestroEq(){
+        return view("CamposNav.NuestroEqm");
     }
+    public function Vision(){
+        return view("CamposNav.Vision");
+    }
+
+    
 }

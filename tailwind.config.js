@@ -10,6 +10,9 @@ export default {
         './resources/**/*.vue',
     ],
     theme: {
+        colors: {
+            customCream: '#fceab8', // Nombre personalizado para el color
+          },
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
