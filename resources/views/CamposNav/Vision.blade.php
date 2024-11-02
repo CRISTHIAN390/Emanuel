@@ -62,7 +62,7 @@
         <div class="grid gap-6 md:grid-cols-3 p-2 px-2 max-w-6xl mx-auto">
             <!-- Valor 1 -->
             <div
-                class="space-y-2 bg-gray-100 p-4 rounded-lg shadow-lg transition duration-300 animate__animated animate__zoomIn max-w-xs mx-auto border border-gray-100 hover:border-gray-300 hover:shadow-3xl hover:shadow-orange-300/50 relative overflow-hidden group">
+                class="space-y-2 bg-gray-100 p-4 rounded-lg shadow-lg transition duration-300 animate__animated animate__zoomIn max-w-xs mx-auto border border-gray-100 hover:border-gray-300 hover:shadow-2xl hover:shadow-orange-300/50 relative overflow-hidden group">
                 <h3 class="text-lg font-bold text-gray-800" style="font-family: Cooper Black">Integridad</h3>
                 <p class="text-gray-700 mt-2 text-justify">
                     Nuestro compromiso es garantizar la calidad y confidencialidad de todos nuestros clientes,
