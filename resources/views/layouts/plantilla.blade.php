@@ -46,7 +46,7 @@
 
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="{{route('home')}}"
+                <a href="{{ route('home') }}"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
                 <div class="relative nav-item">
                     <a href="#"
@@ -54,8 +54,8 @@
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="{{route('cat_rutaEq') }}">Nuestro Equipo</a>
-                        <a href="{{route('cat_rutaVis') }}">Mision,Vision y valores</a>
+                        <a href="{{ route('cat_rutaEq') }}">Nuestro Equipo</a>
+                        <a href="{{ route('cat_rutaVis') }}">Mision,Vision y valores</a>
                         <a href="#">Responsabilidad Social Corporativa</a>
                     </div>
                 </div>
@@ -87,27 +87,84 @@
         <!-- Menú lateral para pantallas pequeñas -->
         <div id="mobile-menu"
             class="fixed top-0 right-0 w-64 h-full bg-gray-600 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
-            <div class="flex justify-between items-center p-4">
+            <div class="flex justify-between items-center p-4 bg-gray-700 text-white border-b border-gray-500">
                 <span class="text-lg font-semibold">Menú</span>
-                <button id="close-menu-button" class="text-white focus:outline-none">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
+                <button id="close-menu-button" class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-200">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <nav class="mt-4">
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Nosotros</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicios</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Clientes</a>
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Blog</a>
+               
+                <a href="{{ route('home') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
+                <hr class="border-t border-gray-50 ">
+
+                <!-- Menú desplegable para Servicios -->
+                <div class="relative">
+                    <button id="services-toggle"
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
+                        Nosotros <span class="inline-block transform transition-transform duration-300"
+                            id="arrow">▿</span>
+                    </button>
+                    <!-- Opciones desplegables de Nosotros -->
+                    <div id="services-submenu" class="hidden pl-6">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
+                            Social Corporativa </a>
+                        
+                    </div>
+                </div>
+                <hr class="border-t border-gray-50 ">
+                <!-- Menú desplegable para Servicios -->
+                <div class="relative">
+                    <button id="services-toggle2"
+                        class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
+                        Servicios <span class="inline-block transform transition-transform duration-300"
+                            id="arrow2">▿</span>
+                    </button>
+                    <!-- Opciones desplegables de Servicios -->
+                    <div id="services-submenu2" class="hidden pl-6">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicio1</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicio2</a>
+                        
+                    </div>
+                </div>
+                <hr class="border-t border-gray-50 ">
                 <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
+                <hr class="border-t border-gray-50 ">
             </nav>
         </div>
     </header><br><br><br>
+    <!-- Script para mostrar y ocultar el submenú -->
+    <script>
+        document.getElementById('services-toggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            const submenu = document.getElementById('services-submenu');
+            const arrow = document.getElementById('arrow');
 
+            // Alterna la visibilidad del submenú
+            submenu.classList.toggle('hidden');
+
+            // Rota la flecha
+            arrow.classList.toggle('rotate-180');
+        });
+        document.getElementById('services-toggle2').addEventListener('click', function(event) {
+            event.preventDefault();
+            const submenu = document.getElementById('services-submenu2');
+            const arrow = document.getElementById('arrow2');
+
+            // Alterna la visibilidad del submenú
+            submenu.classList.toggle('hidden');
+
+            // Rota la flecha
+            arrow.classList.toggle('rotate-180');
+        });
+    </script>
     <!-- Cuerpo -->
     <section>
         @yield('contenido')
@@ -200,25 +257,25 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function() {
             const menuButton = document.getElementById("menu-button");
             const closeMenuButton = document.getElementById("close-menu-button");
             const mobileMenu = document.getElementById("mobile-menu");
-    
+
             // Abre el menú al hacer clic en el botón de menú
-            menuButton.addEventListener("click", function () {
+            menuButton.addEventListener("click", function() {
                 mobileMenu.classList.remove("translate-x-full");
                 mobileMenu.classList.add("translate-x-0");
             });
-    
+
             // Cierra el menú al hacer clic en el botón de cerrar
-            closeMenuButton.addEventListener("click", function () {
+            closeMenuButton.addEventListener("click", function() {
                 mobileMenu.classList.remove("translate-x-0");
                 mobileMenu.classList.add("translate-x-full");
             });
         });
     </script>
-    
+
 
 </body>
 
