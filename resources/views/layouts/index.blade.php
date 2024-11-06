@@ -105,7 +105,9 @@
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Materiales de
                                 Construccion</h3>
-                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                            <a href="{{ route('serv_materia') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                                Ver más
+                            </a>
                         </div>
                     </div>
 
@@ -116,7 +118,9 @@
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Hotel</h3>
-                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                            <a href="{{ route('serv_hotel') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                                Ver más
+                            </a>
                         </div>
                     </div>
 
@@ -127,7 +131,9 @@
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Complejo deportivo</h3>
-                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                            <a href="{{ route('serv_complejo') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                                Ver más
+                            </a>
                         </div>
                     </div>
 
@@ -138,7 +144,9 @@
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">ProFerretería</h3>
-                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                            <a href="{{ route('serv_ferreteria') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                                Ver más
+                            </a>
                         </div>
                     </div>
 
@@ -149,7 +157,9 @@
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2">Servicentro</h3>
-                            <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
+                            <a href="{{ route('serv_servicentro') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                                Ver más
+                            </a>
                         </div>
                     </div>
                 </div>
