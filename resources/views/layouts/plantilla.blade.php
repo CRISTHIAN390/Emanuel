@@ -66,11 +66,11 @@
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="#">Materiales de Construccion</a>
-                        <a href="#">Hotel</a>
-                        <a href="#">Complejo deportivo</a>
-                        <a href="#">ProFerretería</a>
-                        <a href="#">Servicentro</a>
+                        <a href="{{ route('serv_materia')}}">Materiales de Construccion</a>
+                        <a href="{{ route('serv_hotel')}}">Hotel</a>
+                        <a href="{{ route('serv_complejo')}}">Complejo deportivo</a>
+                        <a href="{{ route('serv_ferreteria')}}">ProFerretería</a>
+                        <a href="{{ route('serv_servicentro')}}">Servicentro</a>
                     </div>
                 </div>
             
@@ -86,7 +86,7 @@
 
         <!-- Menú lateral para pantallas pequeñas -->
         <div id="mobile-menu"
-            class="fixed top-0 right-0 w-64 h-full bg-gray-600 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
+            class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
             <div class="flex justify-between items-center p-4 bg-gray-700 text-white border-b border-gray-500">
                 <span class="text-lg font-semibold">Menú</span>
                 <button id="close-menu-button" class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-200">
@@ -97,7 +97,8 @@
             </div>
             <nav class="mt-4">
                
-                <a href="{{ route('home') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
+
+                <a href="{{route('home')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
                 <hr class="border-t border-gray-50 ">
 
                 <!-- Menú desplegable para Servicios -->
@@ -128,10 +129,15 @@
                     </button>
                     <!-- Opciones desplegables de Servicios -->
                     <div id="services-submenu2" class="hidden pl-6">
-                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicio1</a>
+                        <a href="{{ route('serv_materia')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Materiales de Construccion</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicio2</a>
-                        
+                        <a href="{{ route('serv_hotel')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="{{ route('serv_complejo')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Complejo deportivo</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="{{ route('serv_ferreteria')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Ferreteria</a>
+                        <hr class="border-t border-gray-50 ">
+                        <a href="{{ route('serv_servicentro')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicentro</a>
                     </div>
                 </div>
                 <hr class="border-t border-gray-50 ">
@@ -169,28 +175,52 @@
     <section>
         @yield('contenido')
     </section>
-
+    <div class="w-full py-8" style="background: #ef8e00;">
+        <div class="flex justify-center space-x-16 text-white">
+            <!-- Sección de Correo -->
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" >
+                    <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z"/>
+                </svg>
+                <div>
+                    <p class="text-xl font-semibold" style="color:#000823">Email Correo</p>
+                    <p class="text-lg" style="color:#000823">GrupoEmanuel@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Sección de Teléfono -->
+            <div class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z"/>
+                </svg>
+                <div>
+                    <p class="text-xl font-semibold" style="color:#000823" >Llámanos</p>
+                    <p class="text-lg" style="color:#000823" >+51 --- --- ---</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
 
-        <div class="bg-gray-300 w-full py-8">
+        <div class="w-full py-8" style="background: #000823;color:white">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap md:flex-nowrap justify-around items-start">
                     <!-- Menú de Navegación -->
                     <div class="w-full md:w-1/7">
                     </div>
                     <!-- Información sobre Fundación -->
-                    <div class="w-full md:w-2/7">
-                        <h2 class="text-gray-700 font-semibold mb-2">Fundación Emanuel</h2>
-                        <p class="text-gray-600 text-sm">
+                    <div class="w-full md:w-2/7"  >
+                        <h2 class="text-gray-300 font-semibold mb-2">Fundación Emanuel</h2>
+                        <p class="text-gray-300 text-sm  ">
                             Brindamos herramientas que ayudan a los peruanos a fortalecer y desarrollar sus capacidades,
                             incentivando la generación de ideas o proyectos sostenibles y escalables, que aporten al
                             desarrollo de nuestro país.
                         </p>
                     </div>
-                    <div class="w-full md:w-3/7">
-                        <h2 class="text-gray-700 font-semibold mb-2">Menú</h2>
-                        <ul class="text-gray-600 space-y-1 list-disc list-inside">
+                    <div class="w-full md:w-3/7" style="margin-left: 3%">
+                        <h2 class="text-gray-300 font-semibold mb-2">Menú</h2>
+                        <ul class="text-gray-200 space-y-1 list-disc list-inside">
                             <li><a href="#" class="hover:text-red-600">Inicio</a></li>
                             <li><a href="#" class="hover:text-red-600">Conócenos</a></li>
                             <li><a href="#" class="hover:text-red-600">Campus Emanuel</a></li>
@@ -204,35 +234,35 @@
 
                     <!-- Información de Contacto -->
                     <div class="w-full md:w-4/7">
-                        <h2 class="text-gray-700 font-semibold mb-2">Dirección de la oficina</h2>
-                        <p class="text-gray-600 text-sm mb-2">
+                        <h2 class="text-gray-400 font-semibold mb-2">Dirección de la oficina</h2>
+                        <p class="text-gray-300 text-sm mb-2">
                             Avenida Camino Real, Mz32 Lt.2 Trujillo, Perú
                         </p>
-                        <h2 class="text-gray-700 font-semibold mb-2">Contacto</h2>
-                        <p class="text-gray-600 text-sm">Celular: 922457777</p>
-                        <h2 class="text-gray-700 font-semibold mb-2">Correo</h2>
-                        <p class="text-gray-600 text-sm">Correo:----------</p>
+                        <h2 class="text-gray-400 font-semibold mb-2">Contacto</h2>
+                        <p class="text-gray-300 text-sm">Celular: 922457777</p>
+                        <h2 class="text-gray-400 font-semibold mb-2">Correo</h2>
+                        <p class="text-gray-300 text-sm">Correo:----------</p>
                     </div>
 
                     <!-- Redes Sociales -->
                     <div class="w-full md:w-5/7">
-                        <h2 class="text-gray-700 font-semibold mb-2">Síguenos</h2>
-                        <div class="grid grid-cols-2 gap-2">
+                        <h2 class="text-gray-400 font-semibold mb-2">Síguenos</h2>
+                        <div class="grid grid-cols-2 gap-2 ">
                             <a href="#" class="social-icon text-red-600 text-center">
                                 <i class="fab fa-facebook text-2xl"></i>
-                                <p class="text-gray-600 text-sm">Facebook</p>
+                                <p class="text-gray-200 hover:text-gray-800 text-sm">Facebook</p>
                             </a>
                             <a href="#" class="social-icon text-red-600 text-center">
                                 <i class="fab fa-twitter text-2xl"></i>
-                                <p class="text-gray-600 text-sm">Twitter</p>
+                                <p class="text-gray-200 hover:text-gray-800 text-sm">Twitter</p>
                             </a>
                             <a href="#" class="social-icon text-red-600 text-center">
                                 <i class="fab fa-tiktok text-2xl"></i>
-                                <p class="text-gray-600 text-sm">TikTok</p>
+                                <p class="text-gray-200 hover:text-gray-800 text-sm">TikTok</p>
                             </a>
                             <a href="#" class="social-icon text-red-600 text-center">
                                 <i class="fab fa-instagram text-2xl"></i>
-                                <p class="text-gray-600 text-sm">Instagram</p>
+                                <p class="text-gray-200 hover:text-gray-800 text-sm">Instagram</p>
                             </a>
                         </div>
                     </div>

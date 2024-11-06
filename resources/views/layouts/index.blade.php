@@ -65,24 +65,24 @@
                     </p>
 
                     <!-- Sección de estadísticas -->
-                    <div
-                        class="bg-yellow-400 rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
-                        <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+16</span>
+                    <div style="background: #e2a600;color: #001149;"
+                        class="  rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
+                        <div class="flex flex-col items-center" style="text-align: center">
+                            <span class="text-3xl font-bold" style="text-align: center">+16</span>
                             <span class="text-sm">Años de experiencia</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+350</span>
+                        <hr class="border-t border-white my-4 md:hidden"  >
+                        <div class="flex flex-col items-center" style="text-align: center">
+                            <span class="text-3xl font-bold"  >+350</span>
                             <span class="text-sm">Clientes Satisfechos</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center">
+                        <hr class="border-t border-white my-4 md:hidden" >
+                        <div class="flex flex-col items-center" style="text-align: center">
                             <span class="text-3xl font-bold">+400</span>
                             <span class="text-sm">Proyectos ejecutados</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center">
+                        <hr class="border-t border-white my-4 md:hidden"  >
+                        <div class="flex flex-col items-center" style="text-align: center">
                             <span class="text-3xl font-bold">+15</span>
                             <span class="text-sm">Profesionales Calificados</span>
                         </div>
@@ -90,17 +90,19 @@
                 </div>
             </div>
         </div>
-        <!-- Sección Sobre servicios -->
+        <!-- Sección Sobre servicios 
         <div class="w-full bg-gradient-to-b from-yellow-500 to-black text-white py-8">
+        -->  
+        <div class="w-full  text-white py-8" style="background: #d9dfef">  
             <div class="container mx-auto px-4">
-                <h2 class="text-center text-3xl font-bold mb-6">Nuestros Servicios</h2>
+                <h2 class="text-center text-3xl font-bold mb-6" style="color: #000000">Nuestros Servicios</h2>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 p-8">
                     <!-- Tarjeta 1 -->
-                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/sareli.jpg" alt="Materiales de Construccion"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Materiales de
                                 Construccion</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
@@ -108,44 +110,44 @@
                     </div>
 
                     <!-- Tarjeta 2 -->
-                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/hotel.jpg" alt="Hotel"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Hotel</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Complejo deportivo</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
 
                     <!-- Tarjeta 4 -->
-                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">ProFerretería</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>
                     </div>
 
                     <!-- Tarjeta 5 -->
-                    <div class="relative group border-2 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
                         <img src="/img/servicios/servicentro.jpg" alt="Servicentro"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <h3 class="font-bold text-lg uppercase mb-2">Servicentro</h3>
                             <button class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded">Ver más</button>
                         </div>

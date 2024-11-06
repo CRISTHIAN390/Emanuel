@@ -6,16 +6,38 @@ use Illuminate\Http\Request;
 
 class RutasController extends Controller
 {
-    
-    public function NuestroEq(){
+
+    public function NuestroEq()
+    {
         return view("CamposNav.NuestroEqm");
     }
-    public function Vision(){
+    public function Vision()
+    {
         return view("CamposNav.Vision");
     }
-    public function Responsabilidad(){
+    public function Responsabilidad()
+    {
         return view("CamposNav.rsc");
     }
 
-    
+    //Servicios 
+    public function Materiales() {
+        return view("Servicios.materiales");
+    }
+
+    public function Hotel() {
+        return view("Servicios.hotel");
+    }
+
+    public function ComplejoDeportivo() {
+        return view("Servicios.complejo");
+    }
+
+    public function Ferreteria() {
+        return view("Servicios.ferreteria");
+    }
+
+    public function Servicentro() {
+        return view("Servicios.servicentro");
+    }
 }

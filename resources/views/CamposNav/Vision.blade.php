@@ -57,7 +57,7 @@
 
 
     <!-- Valores -->
-    <div class="w-full bg-gradient-to-b from-yellow-300 to-white-200 text-white py-8">
+    <div class="w-full bg-gradient-to-b from-yellow-500 to-white-200 text-white py-8">
         <h2 class="text-center text-3xl font-bold text-black mb-6" style="font-family: Cooper Black">Nuestros Valores</h2>
         <div class="grid gap-6 md:grid-cols-3 p-2 px-2 max-w-6xl mx-auto">
             <!-- Valor 1 -->
