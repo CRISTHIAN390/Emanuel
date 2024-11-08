@@ -175,34 +175,33 @@
     <section>
         @yield('contenido')
     </section>
-    <div class="w-full py-8" style="background: #ef8e00;">
-        <div class="flex justify-center space-x-16 text-white">
-            <!-- Sección de Correo -->
-            <div class="flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" >
-                    <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z"/>
-                </svg>
-                <div>
-                    <p class="text-xl font-semibold" style="color:#000823">Email Correo</p>
-                    <p class="text-lg" style="color:#000823">GrupoEmanuel@gmail.com</p>
+    <!-- Footer -->
+    <footer>
+        <div class="w-full py-8" style="background: #ef8e00;">
+            <div class="flex flex-col md:flex-row justify-center md:space-x-16 space-y-4 md:space-y-0 text-white" style="margin-left: 5%">
+                <!-- Sección de Correo -->
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z"/>
+                    </svg>
+                    <div>
+                        <p class="text-xl font-semibold" style="color:#000823">Email Correo</p>
+                        <p class="text-lg" style="color:#000823">GrupoEmanuel@gmail.com</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Sección de Teléfono -->
-            <div class="flex items-center space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z"/>
-                </svg>
-                <div>
-                    <p class="text-xl font-semibold" style="color:#000823" >Llámanos</p>
-                    <p class="text-lg" style="color:#000823" >+51 --- --- ---</p>
+                
+                <!-- Sección de Teléfono -->
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z"/>
+                    </svg>
+                    <div>
+                        <p class="text-xl font-semibold" style="color:#000823">Llámanos</p>
+                        <p class="text-lg" style="color:#000823">+51 --- --- ---</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Footer -->
-    <footer>
-
         <div class="w-full py-8" style="background: #000823;color:white">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap md:flex-nowrap justify-around items-start">
