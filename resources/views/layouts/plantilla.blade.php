@@ -41,10 +41,11 @@
     <header class="bg-white shadow-md fixed top-0 w-full z-20 top-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <!-- Logo -->
+            <a href="{{ route('home') }}">
             <div class="flex justify-center sm:justify-start w-full sm:w-auto items-center logo">
                 <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
             </div>
-
+            </a>
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
                 <a href="{{ route('home') }}"
@@ -74,7 +75,7 @@
                     </div>
                 </div>
             
-                <a href="#"
+                <a href="{{route('serv_consulta')}}"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
 
@@ -141,7 +142,7 @@
                     </div>
                 </div>
                 <hr class="border-t border-gray-50 ">
-                <a href="#" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
+                <a href="{{route('serv_consulta')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
                 <hr class="border-t border-gray-50 ">
             </nav>
         </div>

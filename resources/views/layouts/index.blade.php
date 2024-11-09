@@ -3,41 +3,41 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6" style="border-bottom: 5px solid #ffd900d4">
+        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6  animate__animated animate__slideInRight" style="border-bottom: 5px solid #ffd900d4">
             <div class="relative  border-b-4 border-[#ffd900d4] h-[300px] lg:h-[460px]">
                 <div class="overflow-hidden h-full">
                     <div class="flex transition-transform duration-300 h-full" id="carousel">
-                        <div class="flex-none w-full h-full">
+                        <div class="flex-none w-full h-full animate__animated animate__slideInRight ">
                             <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
                                 class="carousel-image object-cover w-full h-full">
                         </div>
-                        <div class="flex-none w-full h-full">
+                        <div class="flex-none w-full h-full ">
                             <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
                                 class="carousel-image object-cover w-full h-full">
                         </div>
-                        <div class="flex-none w-full h-full">
+                        <div class="flex-none w-full h-full ">
                             <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
                                 class="carousel-image object-cover w-full h-full">
                         </div>
-                        <div class="flex-none w-full h-full">
+                        <div class="flex-none w-full h-full ">
                             <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
                                 class="carousel-image object-cover w-full h-full">
                         </div>
                     </div>
                 </div>
                 <button id="prev"
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110 animate__animated animate__fadeInLeft">
                     ❮
                 </button>
                 <button id="next"
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110 animate__animated animate__fadeInRight">
                     ❯
                 </button>
             </div>
         </div>
 
         <!-- Añadir contenido -->
-        <div class="container mx-auto max-w-6xl px-4 py-8">
+        <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
             <div
                 class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-start text-center md:text-left p-6 hover:shadow-xl transition-shadow 
                  duration-500">
@@ -64,10 +64,9 @@
                         en agentes de cambio.
                     </p>
 
-                    <!-- Sección de estadísticas -->
                     <div style="background: #e2a600;color: #001149;"
-                        class="  rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
-                        <div class="flex flex-col items-center" style="text-align: center">
+                        class="  rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0 ">
+                        <div class="flex flex-col items-center animate__animated animate__pulse" style="text-align: center">
                             <span class="text-3xl font-bold" style="text-align: center">+16</span>
                             <span class="text-sm">Años de experiencia</span>
                         </div>
@@ -90,15 +89,13 @@
                 </div>
             </div>
         </div>
-        <!-- Sección Sobre servicios 
-        <div class="w-full bg-gradient-to-b from-yellow-500 to-black text-white py-8">
-        -->  
+
         <div class="w-full  text-white py-8" style="background: #d9dfef">  
             <div class="container mx-auto px-4">
-                <h2 class="text-center text-3xl font-bold mb-6" style="color: #000000">Nuestros Servicios</h2>
+                <h2 class="text-center text-3xl font-bold mb-6 animate__animated animate__fadeInDown" style="color: #000000">Nuestros Servicios</h2>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 p-8">
                     <!-- Tarjeta 1 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
                         <img src="/img/servicios/sareli.jpg" alt="Materiales de Construccion"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
@@ -112,7 +109,7 @@
                     </div>
 
                     <!-- Tarjeta 2 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
                         <img src="/img/servicios/hotel.jpg" alt="Hotel"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
@@ -125,7 +122,7 @@
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
                         <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
@@ -138,7 +135,7 @@
                     </div>
 
                     <!-- Tarjeta 4 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
                         <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
@@ -151,7 +148,7 @@
                     </div>
 
                     <!-- Tarjeta 5 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px]">
+                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
                         <img src="/img/servicios/servicentro.jpg" alt="Servicentro"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
@@ -166,7 +163,6 @@
             </div>
         </div>
     </div>
-    <!-- JavaScript for Carousel and Menu -->
     <script>
         const carousel = document.getElementById('carousel');
         const prevButton = document.getElementById('prev');

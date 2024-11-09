@@ -40,4 +40,19 @@ class RutasController extends Controller
     public function Servicentro() {
         return view("Servicios.servicentro");
     }
+
+    public function Contacto() {
+        return view("Servicios.contacto");
+    }
+    public function Registro(Request $request) {
+        // Validar los datos
+        $request->validate([
+            'nombre' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'mensaje' => 'required|string|max:255'
+        ]);
+        
+        return view("Servicios.contacto");
+    }
+
 }
