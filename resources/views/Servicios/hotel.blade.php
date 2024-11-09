@@ -1,10 +1,7 @@
 @extends('layouts.plantilla')
 @section('Navs', 'Hotel')
 @section('contenido')
-    <!-- Contenido del servicio Hotel Emanuel -->
-    <!--
-        Breve descripción: Hotel Emanuel DEDICADO AL SERVICIO DE HOSPEDAJE Y ALQUILER DE LOCAL PARA EVENTOS y más.
-    -->
+
     <div class="relative mt-4 py-10 bg-white">
         <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-6xl">
             <div class="col-12 animate__animated animate__fadeIn">

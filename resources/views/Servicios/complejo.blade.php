@@ -15,7 +15,7 @@
                 <div class="grid gap-6 lg:grid-cols-2 lg:space-x-6 animate__animated animate__fadeInUp">
                     <!-- Texto en tarjeta solo en pantallas grandes -->
                     <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
-                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:block hidden">
+                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
                             <div class="text-center">
                                 <p class="text-lg font-semibold text-gray-800 mb-4">Características de nuestro complejo deportivo</p>
                                 <ul class="list-disc list-inside text-justify text-gray-700 mt-4">
@@ -54,7 +54,7 @@
                     </div>
                     <!-- Texto en tarjeta solo en pantallas grandes -->
                     <div class="order-2 lg:order-2 flex items-center justify-center mt-6">
-                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:block hidden">
+                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
                             <p class="text-center">
                                 Ofrecemos horarios flexibles y paquetes especiales para eventos y entrenamientos personalizados.
                             </p>
@@ -70,7 +70,7 @@
                 <div class="grid gap-6 lg:grid-cols-2 lg:space-x-6 animate__animated animate__fadeInUp mt-6">
                     <!-- Texto en tarjeta solo en pantallas grandes -->
                     <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
-                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:block hidden">
+                        <div class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
                             <div class="text-center">
                                 <p class="text-lg font-semibold text-gray-800 mb-4">Beneficios de nuestro complejo deportivo</p>
                                 <ul class="list-disc list-inside text-justify text-gray-700 mt-4">
