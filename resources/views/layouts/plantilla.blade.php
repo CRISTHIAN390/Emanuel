@@ -232,22 +232,21 @@
                     <!-- Información sobre Fundación -->
                     <div class="w-full md:w-2/7">
                         <h2 class="text-gray-300 font-semibold mb-2">Fundación Emanuel</h2>
-                        <p class="text-gray-300 text-sm  ">
-                            Brindamos herramientas que ayudan a los peruanos a fortalecer y desarrollar sus capacidades,
-                            incentivando la generación de ideas o proyectos sostenibles y escalables, que aporten al
-                            desarrollo de nuestro país.
+                        <p class="text-gray-300 text-sm text-justify ">
+                            Fundación Emanuel proporciona recursos para potenciar las habilidades de sus clientes, con
+                            énfasis en proyectos sostenibles, innovación y apoyo al desarrollo personal y profesional,
+                            promoviendo el progreso del país.
                         </p>
                     </div>
                     <div class="w-full md:w-3/7" style="margin-left: 3%">
                         <h2 class="text-gray-300 font-semibold mb-2">Menú</h2>
                         <ul class="text-gray-200 space-y-1 list-disc list-inside">
-                            <li><a href="#" class="hover:text-red-600">Inicio</a></li>
-                            <li><a href="#" class="hover:text-red-600">Conócenos</a></li>
-                            <li><a href="#" class="hover:text-red-600">Campus Emanuel</a></li>
-                            <li><a href="#" class="hover:text-red-600">Portal PQS</a></li>
-
-                            <li><a href="#" class="hover:text-red-600">Noticias</a></li>
-                            <li><a href="#" class="hover:text-red-600">Contactos</a></li>
+                            <li><a href="{{ route('home') }}" class="hover:text-red-600">Inicio</a></li>
+                            <li><a href="{{ route('cat_rutaEq') }}" class="hover:text-red-600">Nuestro Equipo</a>
+                            </li>
+                            <li><a href="{{ route('cat_rutaVis') }}" class="hover:text-red-600">Vision, Mision y
+                                    valores</a></li>
+                            <li><a href="{{ route('consultas') }}" class="hover:text-red-600">Contactanos</a></li>
                         </ul>
                     </div>
 
