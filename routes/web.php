@@ -18,8 +18,11 @@ Route::get('/emanuel/complejo', [RutasController::class,'ComplejoDeportivo'])->n
 Route::get('/emanuel/proferreteria', [RutasController::class,'Ferreteria'])->name('serv_ferreteria');
 Route::get('/emanuel/servicentro', [RutasController::class,'Servicentro'])->name('serv_servicentro');
 
-//Contacto
-Route::get('/emanuel/contacto', [RutasController::class,'Contacto'])->name('serv_consulta');
-Route::post('/emanuel/contacto', [RutasController::class,'Registro'])->name('consultas');
+//Para Envio de mensajes
+
+// Para mostrar el formulario de contacto
+Route::get('/emanuel/contacto', [RutasController::class,'Contacto'])->name('serv_consulta'); 
+// Para enviar los datos al controlador
+Route::post('/emanuel/contacto', [RutasController::class,'Registro'])->name('consultas');   
 
 
