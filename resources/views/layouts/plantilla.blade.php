@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="/css/estilos.css">
     <title>GrupoEmanuel</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <style>
@@ -42,9 +43,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <!-- Logo -->
             <a href="{{ route('home') }}">
-            <div class="flex justify-center sm:justify-start w-full sm:w-auto items-center logo">
-                <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
-            </div>
+                <div class="flex justify-center sm:justify-start w-full sm:w-auto items-center logo">
+                    <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
+                </div>
             </a>
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
@@ -67,15 +68,15 @@
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="{{ route('serv_materia')}}">Materiales de Construccion</a>
-                        <a href="{{ route('serv_hotel')}}">Hotel</a>
-                        <a href="{{ route('serv_complejo')}}">Complejo deportivo</a>
-                        <a href="{{ route('serv_ferreteria')}}">ProFerretería</a>
-                        <a href="{{ route('serv_servicentro')}}">Servicentro</a>
+                        <a href="{{ route('serv_materia') }}">Materiales de Construccion</a>
+                        <a href="{{ route('serv_hotel') }}">Hotel</a>
+                        <a href="{{ route('serv_complejo') }}">Complejo deportivo</a>
+                        <a href="{{ route('serv_ferreteria') }}">ProFerretería</a>
+                        <a href="{{ route('serv_servicentro') }}">Servicentro</a>
                     </div>
                 </div>
-            
-                <a href="{{route('serv_consulta')}}"
+
+                <a href="{{ route('serv_consulta') }}"
                     class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
             </nav>
 
@@ -90,16 +91,19 @@
             class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
             <div class="flex justify-between items-center p-4 bg-gray-700 text-white border-b border-gray-500">
                 <span class="text-lg font-semibold">Menú</span>
-                <button id="close-menu-button" class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-200">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                <button id="close-menu-button"
+                    class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-200">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <nav class="mt-4">
-               
 
-                <a href="{{route('home')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
+
+                <a href="{{ route('home') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
                 <hr class="border-t border-gray-50 ">
 
                 <!-- Menú desplegable para Servicios -->
@@ -111,13 +115,16 @@
                     </button>
                     <!-- Opciones desplegables de Nosotros -->
                     <div id="services-submenu" class="hidden pl-6">
-                        <a href="{{route('cat_rutaEq')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
+                        <a href="{{ route('cat_rutaEq') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{route('cat_rutaVis')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
+                        <a href="{{ route('cat_rutaVis') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('cat_rutarsc') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
+                        <a href="{{ route('cat_rutarsc') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
                             Social Corporativa </a>
-                        
+
                     </div>
                 </div>
                 <hr class="border-t border-gray-50 ">
@@ -130,19 +137,25 @@
                     </button>
                     <!-- Opciones desplegables de Servicios -->
                     <div id="services-submenu2" class="hidden pl-6">
-                        <a href="{{ route('serv_materia')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Materiales de Construccion</a>
+                        <a href="{{ route('serv_materia') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Materiales de Construccion</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_hotel')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
+                        <a href="{{ route('serv_hotel') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_complejo')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Complejo deportivo</a>
+                        <a href="{{ route('serv_complejo') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Complejo deportivo</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_ferreteria')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Ferreteria</a>
+                        <a href="{{ route('serv_ferreteria') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Ferreteria</a>
                         <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_servicentro')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicentro</a>
+                        <a href="{{ route('serv_servicentro') }}"
+                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicentro</a>
                     </div>
                 </div>
                 <hr class="border-t border-gray-50 ">
-                <a href="{{route('serv_consulta')}}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
+                <a href="{{ route('serv_consulta') }}"
+                    class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
                 <hr class="border-t border-gray-50 ">
             </nav>
         </div>
@@ -175,26 +188,33 @@
     <!-- Cuerpo -->
     <section>
         @yield('contenido')
+        <a href="https://wa.me/917700319?text=Me%20gustaría%20consultar%20el%20informacion" class="whatsapp"
+            target="_blank">
+            <i class="fab fa-whatsapp whatsapp-icon"></i>
+        </a>
     </section>
     <!-- Footer -->
     <footer>
         <div class="w-full py-8" style="background: #ef8e00;">
-            <div class="flex flex-col md:flex-row justify-center md:space-x-16 space-y-4 md:space-y-0 text-white" style="margin-left: 5%">
+            <div class="flex flex-col md:flex-row justify-center md:space-x-16 space-y-4 md:space-y-0 text-white"
+                style="margin-left: 5%">
                 <!-- Sección de Correo -->
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z"/>
+                        <path
+                            d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z" />
                     </svg>
                     <div>
                         <p class="text-xl font-semibold" style="color:#000823">Email Correo</p>
                         <p class="text-lg" style="color:#000823">GrupoEmanuel@gmail.com</p>
                     </div>
                 </div>
-                
+
                 <!-- Sección de Teléfono -->
                 <div class="flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z"/>
+                        <path
+                            d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z" />
                     </svg>
                     <div>
                         <p class="text-xl font-semibold" style="color:#000823">Llámanos</p>
@@ -210,7 +230,7 @@
                     <div class="w-full md:w-1/7">
                     </div>
                     <!-- Información sobre Fundación -->
-                    <div class="w-full md:w-2/7"  >
+                    <div class="w-full md:w-2/7">
                         <h2 class="text-gray-300 font-semibold mb-2">Fundación Emanuel</h2>
                         <p class="text-gray-300 text-sm  ">
                             Brindamos herramientas que ayudan a los peruanos a fortalecer y desarrollar sus capacidades,
@@ -285,7 +305,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const menuButton = document.getElementById("menu-button");

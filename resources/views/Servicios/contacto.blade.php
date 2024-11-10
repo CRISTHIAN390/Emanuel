@@ -4,8 +4,9 @@
 
 @section('contenido')
     <!-- Formulario de contacto -->
-    <div class="w-full py-8  animate__animated animate__zoomIn" style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">
-        <div class="mt-10 bg-white  rounded-lg shadow-lg max-w-3xl mx-auto border border-gray-300">
+    <div class="w-full py-8  animate__animated animate__zoomIn"
+        style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">
+        <div class="mt-10 bg-white rounded-lg shadow-lg max-w-3xl mx-auto border border-gray-300">
             <div class="p-8">
                 <h2 class="text-3xl font-bold mb-6 text-[#7b5e2a] text-center">Consultar</h2>
                 <form action="{{ route('consultas') }}" method="POST">
@@ -36,4 +37,21 @@
             </div>
         </div>
     </div>
+
+    <!-- Notificación -->
+    @if (session('success'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                swal("¡Consulta Enviada!", "{{ session('success') }}", "success");
+            });
+        </script>
+    @endif
+
+    @if (session('error'))
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                swal("Error", "{{ session('error') }}", "error");
+            });
+        </script>
+    @endif
 @endsection

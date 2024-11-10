@@ -51,8 +51,20 @@ class RutasController extends Controller
             'email' => 'required|email|max:255',
             'message' => 'required|string|max:255'
         ]);
-        //redericcionar a la vista consultas y enviar un mensaje que diga enviado con exito
+        $lastMessage = session('last_message');
+        if ($lastMessage && $lastMessage === $request->message) {
+            return redirect()->route('consultas')->with('error', 'Ya has enviado un mensaje igual recientemente.');
+        }
+        session(['last_message' => $request->message]);
+
+        // Enviar al correo electrónico
+        
+
+
+
+        // Redireccionar a la vista consultas con un mensaje de éxito
         return redirect()->route('consultas')->with('success', 'El mensaje ha sido enviado con éxito');
     }
+    
 
 }
