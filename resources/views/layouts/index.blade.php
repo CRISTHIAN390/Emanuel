@@ -90,9 +90,15 @@
             </div>
         </div>
 
-        <div class="w-full  text-white py-8" style="background: #d9dfef">  
+        <div class="w-full  text-white py-8"  style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">  
             <div class="container mx-auto px-4">
-                <h2 class="text-center text-3xl font-bold mb-6 animate__animated animate__fadeInDown" style="color: #000000">Nuestros Servicios</h2>
+                <div style="text-align: center;">
+                    <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInDown"
+                        style="display: inline-block; background: #ffffff; padding: 0.5rem 1.5rem; color: #000823; 
+                               border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border: 2px solid #ececec;">
+                        NUESTROS SERVICIOS
+                    </h2>
+                </div>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 p-8">
                     <!-- Tarjeta 1 -->
                     <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">

@@ -35,7 +35,7 @@
     }
 </style>
 
-<body class="bg-gray-200">
+<body class="bg-white">
 
     <!-- Encabezado -->
     <header class="bg-white shadow-md fixed top-0 w-full z-20 top-border">

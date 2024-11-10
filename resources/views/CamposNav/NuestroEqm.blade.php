@@ -2,7 +2,10 @@
 @section('Navs', 'Vision')
 @section('contenido')
 
-    <div class="relative mt-4 bg-gradient-to-b from-yellow-300 to-white py-10">
+    <div class="relative mt-4  py-10  animate__animated animate__zoomIn"
+    
+    style="background-image: url('/img/Publicidad/nosotros.jpg'); background-size: cover; background-position: center;"
+    >
         <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-5xl">
 
             <!-- Tarjeta de Operaciones -->

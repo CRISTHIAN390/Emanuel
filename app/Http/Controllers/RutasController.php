@@ -47,12 +47,12 @@ class RutasController extends Controller
     public function Registro(Request $request) {
         // Validar los datos
         $request->validate([
-            'nombre' => 'required|string|max:255',
+            'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'mensaje' => 'required|string|max:255'
+            'message' => 'required|string|max:255'
         ]);
-        
-        return view("Servicios.contacto");
+        //redericcionar a la vista consultas y enviar un mensaje que diga enviado con exito
+        return redirect()->route('consultas')->with('success', 'El mensaje ha sido enviado con éxito');
     }
 
 }
