@@ -3,7 +3,8 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6  animate__animated animate__slideInRight" style="border-bottom: 5px solid #ffd900d4">
+        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6  animate__animated animate__slideInRight"
+            style="border-bottom: 5px solid #ffd900d4">
             <div class="relative  border-b-4 border-[#ffd900d4] h-[300px] lg:h-[460px]">
                 <div class="overflow-hidden h-full">
                     <div class="flex transition-transform duration-300 h-full" id="carousel">
@@ -70,17 +71,17 @@
                             <span class="text-3xl font-bold" style="text-align: center">+16</span>
                             <span class="text-sm">Años de experiencia</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden"  >
+                        <hr class="border-t border-white my-4 md:hidden">
                         <div class="flex flex-col items-center" style="text-align: center">
-                            <span class="text-3xl font-bold"  >+350</span>
+                            <span class="text-3xl font-bold">+350</span>
                             <span class="text-sm">Clientes Satisfechos</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden" >
+                        <hr class="border-t border-white my-4 md:hidden">
                         <div class="flex flex-col items-center" style="text-align: center">
                             <span class="text-3xl font-bold">+400</span>
                             <span class="text-sm">Proyectos ejecutados</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden"  >
+                        <hr class="border-t border-white my-4 md:hidden">
                         <div class="flex flex-col items-center" style="text-align: center">
                             <span class="text-3xl font-bold">+15</span>
                             <span class="text-sm">Profesionales Calificados</span>
@@ -90,7 +91,8 @@
             </div>
         </div>
 
-        <div class="w-full  text-white py-8"  style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">  
+        <div class="w-full  text-white py-8"
+            style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">
             <div class="container mx-auto px-4">
                 <div style="text-align: center;">
                     <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInDown"
@@ -99,68 +101,64 @@
                         NUESTROS SERVICIOS
                     </h2>
                 </div>
-                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-5 p-8">
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 p-8">
+
                     <!-- Tarjeta 1 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
-                        <img src="/img/servicios/sareli.jpg" alt="Materiales de Construccion"
+                    <div
+                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
+                        <img src="/img/servicios/hotel.jpg" alt="Hotel"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Materiales de
-                                Construccion</h3>
-                            <a href="{{ route('serv_materia') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Hotel</h3>
+                            <a href="{{ route('serv_hotel') }}"
+                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
+
                     <!-- Tarjeta 2 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
-                        <img src="/img/servicios/hotel.jpg" alt="Hotel"
+                    <div
+                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
+                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Hotel</h3>
-                            <a href="{{ route('serv_hotel') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Complejo deportivo</h3>
+                            <a href="{{ route('serv_complejo') }}"
+                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
-                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
+                    <div
+                    class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
+                        <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">Complejo deportivo</h3>
-                            <a href="{{ route('serv_complejo') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center">ProFerretería</h3>
+                            <a href="{{ route('serv_ferreteria') }}"
+                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
                     <!-- Tarjeta 4 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
-                        <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
-                        <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2" style="text-align: center">ProFerretería</h3>
-                            <a href="{{ route('serv_ferreteria') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
-                                Ver más
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Tarjeta 5 -->
-                    <div class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden h-[200px] animate__animated animate__zoomIn">
+                    <div
+                    class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
                         <img src="/img/servicios/servicentro.jpg" alt="Servicentro"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2">Servicentro</h3>
-                            <a href="{{ route('serv_servicentro') }}" class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Servicentro</h3>
+                            <a href="{{ route('serv_servicentro') }}"
+                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
                                 Ver más
                             </a>
                         </div>

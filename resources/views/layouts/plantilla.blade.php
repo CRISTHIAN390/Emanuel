@@ -68,7 +68,6 @@
                         <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
                     </a>
                     <div class="submenu">
-                        <a href="{{ route('serv_materia') }}">Materiales de Construccion</a>
                         <a href="{{ route('serv_hotel') }}">Hotel</a>
                         <a href="{{ route('serv_complejo') }}">Complejo deportivo</a>
                         <a href="{{ route('serv_ferreteria') }}">ProFerretería</a>
@@ -137,9 +136,6 @@
                     </button>
                     <!-- Opciones desplegables de Servicios -->
                     <div id="services-submenu2" class="hidden pl-6">
-                        <a href="{{ route('serv_materia') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Materiales de Construccion</a>
-                        <hr class="border-t border-gray-50 ">
                         <a href="{{ route('serv_hotel') }}"
                             class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
                         <hr class="border-t border-gray-50 ">

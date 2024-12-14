@@ -57,10 +57,6 @@ class RutasController extends Controller
     }
 
     //Servicios 
-    public function Materiales() {
-        return view("Servicios.materiales");
-    }
-
     public function Hotel() {
         return view("Servicios.hotel");
     }

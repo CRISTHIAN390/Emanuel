@@ -12,7 +12,6 @@ Route::get('/emanuel/RCS', [RutasController::class,'Responsabilidad'])->name('ca
 
 
 //Servicios
-Route::get('/emanuel/materiales', [RutasController::class,'Materiales'])->name('serv_materia');
 Route::get('/emanuel/hotel', [RutasController::class,'Hotel'])->name('serv_hotel');
 Route::get('/emanuel/complejo', [RutasController::class,'ComplejoDeportivo'])->name('serv_complejo');
 Route::get('/emanuel/proferreteria', [RutasController::class,'Ferreteria'])->name('serv_ferreteria');
