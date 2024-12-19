@@ -9,88 +9,83 @@
                     <!-- Imagen 1 -->
                     <div class="flex-none w-full h-full relative">
                         <!-- Imagen con desenfoque y oscurecimiento -->
-                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
-                            class="object-cover w-full h-full brightness-50">
-                <!-- Contenido de texto -->
-                <div class="absolute inset-0 flex items-center justify-start">
-                    <div 
-                        class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                        style="margin-left: 20px; /* Espaciado por defecto */
+                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1" class="object-cover w-full h-full brightness-50">
+                        <!-- Contenido de texto -->
+                        <div class="absolute inset-0 flex items-center justify-start">
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
+                                style="margin-left: 20px; /* Espaciado por defecto */
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                        <h1 class="text-white font-bold"
-                            style="font-size: 3vw; /* Tamaño dinámico responsivo */
+                                <h1 class="text-white font-bold"
+                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
                                    font-family: 'Comic Sans MS', cursive, sans-serif;
                                    background: #000823; 
-                                   border-radius: 10px; 
+                                   border-radius: 40px; 
                                    padding: 10px 20px;">
-                            GRUPO EMANUEL RLG
-                        </h1>
-                    </div>
-                </div>
+                                    GRUPO EMANUEL RLG
+                                </h1>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Imagen 2 -->
                     <div class="flex-none w-full h-full relative">
                         <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
                             class="object-cover w-full h-full brightness-50">
-                <!-- Contenido de texto -->
-                <div class="absolute inset-0 flex items-center justify-start">
-                    <div 
-                        class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                        style="margin-left: 20px; /* Espaciado por defecto */
+                        <!-- Contenido de texto -->
+                        <div class="absolute inset-0 flex items-center justify-start">
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
+                                style="margin-left: 20px; /* Espaciado por defecto */
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                        <h1 class="text-white font-bold"
-                            style="font-size: 3vw; /* Tamaño dinámico responsivo */
+                                <h1 class="text-white font-bold"
+                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
                                    font-family: 'Comic Sans MS', cursive, sans-serif;
                                    background: #000823; 
-                                   border-radius: 10px; 
+                                    border-radius: 40px; 
                                    padding: 10px 20px;">
-                            GRUPO EMANUEL RLG
-                        </h1>
-                    </div>
-                </div>
+                                    GRUPO EMANUEL RLG
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                     <!-- Imagen 3 -->
                     <div class="flex-none w-full h-full relative">
                         <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
                             class="object-cover w-full h-full brightness-50">
-                <!-- Contenido de texto -->
-                <div class="absolute inset-0 flex items-center justify-start">
-                    <div 
-                        class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                        style="margin-left: 20px; /* Espaciado por defecto */
+                        <!-- Contenido de texto -->
+                        <div class="absolute inset-0 flex items-center justify-start">
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
+                                style="margin-left: 20px; /* Espaciado por defecto */
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                        <h1 class="text-white font-bold"
-                            style="font-size: 3vw; /* Tamaño dinámico responsivo */
+                                <h1 class="text-white font-bold"
+                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
                                    font-family: 'Comic Sans MS', cursive, sans-serif;
                                    background: #000823; 
-                                   border-radius: 10px; 
+                                      border-radius: 40px; 
                                    padding: 10px 20px;">
-                            GRUPO EMANUEL RLG
-                        </h1>
-                    </div>
-                </div>
+                                    GRUPO EMANUEL RLG
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                     <!-- Imagen 4 -->
                     <div class="flex-none w-full h-full relative">
                         <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
                             class="object-cover w-full h-full brightness-50">
-                <!-- Contenido de texto -->
-                <div class="absolute inset-0 flex items-center justify-start">
-                    <div 
-                        class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                        style="margin-left: 20px; /* Espaciado por defecto */
+                        <!-- Contenido de texto -->
+                        <div class="absolute inset-0 flex items-center justify-start">
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
+                                style="margin-left: 20px; /* Espaciado por defecto */
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                        <h1 class="text-white font-bold"
-                            style="font-size: 3vw; /* Tamaño dinámico responsivo */
+                                <h1 class="text-white font-bold"
+                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
                                    font-family: 'Comic Sans MS', cursive, sans-serif;
                                    background: #000823; 
-                                   border-radius: 10px; 
+                                      border-radius: 40px; 
                                    padding: 10px 20px;">
-                            GRUPO EMANUEL RLG
-                        </h1>
-                    </div>
-                </div>
+                                    GRUPO EMANUEL RLG
+                                </h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
