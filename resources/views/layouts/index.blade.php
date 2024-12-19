@@ -3,39 +3,39 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="carousel-container bg-cover bg-center overflow-hidden mb-6  animate__animated animate__slideInRight"
-            style="border-bottom: 5px solid #ffd900d4">
-            <div class="relative  border-b-4 border-[#ffd900d4] h-[300px] lg:h-[460px]">
-                <div class="overflow-hidden h-full">
-                    <div class="flex transition-transform duration-300 h-full" id="carousel">
-                        <div class="flex-none w-full h-full animate__animated animate__slideInRight ">
-                            <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
-                                class="carousel-image object-cover w-full h-full">
-                        </div>
-                        <div class="flex-none w-full h-full ">
-                            <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
-                                class="carousel-image object-cover w-full h-full">
-                        </div>
-                        <div class="flex-none w-full h-full ">
-                            <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
-                                class="carousel-image object-cover w-full h-full">
-                        </div>
-                        <div class="flex-none w-full h-full ">
-                            <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
-                                class="carousel-image object-cover w-full h-full">
-                        </div>
+        <div class="relative border-b-4 border-[#ffd900d4] h-72 sm:h-96 lg:h-[560px] w-full">
+            <div class="overflow-hidden h-full w-full">
+                <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
+                    <div class="flex-none w-full h-full">
+                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
+                            class="object-fill w-full h-full">
+                    </div>
+                    <div class="flex-none w-full h-full">
+                        <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
+                            class="object-fill w-full h-full">
+                    </div>
+                    <div class="flex-none w-full h-full">
+                        <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
+                            class="object-fill w-full h-full">
+                    </div>
+                    <div class="flex-none w-full h-full">
+                        <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
+                            class="object-fill w-full h-full">
                     </div>
                 </div>
-                <button id="prev"
-                    class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110 animate__animated animate__fadeInLeft">
-                    ❮
-                </button>
-                <button id="next"
-                    class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110 animate__animated animate__fadeInRight">
-                    ❯
-                </button>
             </div>
+            <button id="prev"
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                ❮
+            </button>
+            <button id="next"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                ❯
+            </button>
         </div>
+        
+        
+        
 
         <!-- Añadir contenido -->
         <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
