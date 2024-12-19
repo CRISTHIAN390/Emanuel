@@ -4,8 +4,8 @@
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
         <div class="relative border-b-4 border-[#ffd900d4]    w-full h-[500px] sm:h-[600px] lg:h-[700px]">
-            <div class="overflow-hidden h-full w-full">
-                <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
+            <div class="overflow-hidden border-b-4 h-full w-full">
+                <div class="flex  transition-transform duration-300 h-full w-full" id="carousel">
                     <div class="flex-none w-full h-full">
                         <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
                             class="object-cover w-full h-full">
