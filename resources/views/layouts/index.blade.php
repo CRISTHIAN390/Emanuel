@@ -66,7 +66,7 @@
                         en agentes de cambio.
                     </p>
 
-                    <div style="background: #e2a600;color: #001149;"
+                    <div style="background: #f8c740;color: #001c77;"
                         class="  rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0 ">
                         <div class="flex flex-col items-center animate__animated animate__pulse" style="text-align: center">
                             <span class="text-3xl font-bold" style="text-align: center">+16</span>
