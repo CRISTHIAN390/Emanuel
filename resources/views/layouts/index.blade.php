@@ -3,24 +3,24 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="relative border-b-4 border-[#ffd900d4] h-72 sm:h-96 lg:h-[560px] w-full">
+        <div class="relative border-b-4 border-[#ffd900d4]    w-full h-[500px] sm:h-[600px] lg:h-[700px]">
             <div class="overflow-hidden h-full w-full">
                 <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
                     <div class="flex-none w-full h-full">
                         <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1"
-                            class="object-fill w-full h-full">
+                            class="object-cover w-full h-full">
                     </div>
                     <div class="flex-none w-full h-full">
                         <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
-                            class="object-fill w-full h-full">
+                            class="object-cover w-full h-full">
                     </div>
                     <div class="flex-none w-full h-full">
                         <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
-                            class="object-fill w-full h-full">
+                            class="object-cover w-full h-full">
                     </div>
                     <div class="flex-none w-full h-full">
                         <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
-                            class="object-fill w-full h-full">
+                            class="object-cover w-full h-full">
                     </div>
                 </div>
             </div>
@@ -33,6 +33,7 @@
                 ❯
             </button>
         </div>
+        
         
         
         
