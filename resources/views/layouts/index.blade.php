@@ -3,7 +3,7 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px]">
+        <div class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn" >
             <div class="overflow-hidden border-b-4 h-full w-full relative">
                 <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
                     <!-- Imagen 1 -->
@@ -250,7 +250,7 @@
         };
 
         // Avance automático cada 4 segundos
-        setInterval(nextSlide, 4500);
+        setInterval(nextSlide, 3000);
 
         nextButton.addEventListener('click', () => {
             nextSlide();
