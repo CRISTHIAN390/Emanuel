@@ -182,9 +182,10 @@
         });
     </script>
     <!-- Cuerpo -->
-    <section >
+    <section>
         @yield('contenido')
-        <a href="https://wa.me/917700319?text=Me%20gustaría%20consultar%20el%20informacion" class="whatsapp" target="_blank">
+        <a href="https://wa.me/917700319?text=Me%20gustaría%20consultar%20el%20informacion" class="whatsapp"
+            target="_blank">
             <i class="fab fa-whatsapp whatsapp-icon"></i>
         </a>
     </section>
@@ -248,7 +249,7 @@
 
                     <!-- Información de Contacto -->
                     <div class="w-full md:w-4/7">
-                        <h2 class="text-gray-400 font-semibold mb-2">Dirección de la oficina</h2>
+                        <h2 class="text-gray-200 font-semibold mb-2">Dirección de la oficina</h2>
                         <p class="text-gray-300 text-sm mb-2">
                             Avenida Camino Real, Mz32 Lt.2 Trujillo, Perú
                         </p>
@@ -258,28 +259,39 @@
                         <p class="text-gray-300 text-sm">Correo:----------</p>
                     </div>
 
+
                     <!-- Redes Sociales -->
                     <div class="w-full md:w-5/7">
-                        <h2 class="text-gray-400 font-semibold mb-2">Síguenos</h2>
-                        <div class="grid grid-cols-2 gap-2 ">
-                            <a href="#" class="social-icon text-red-600 text-center">
-                                <i class="fab fa-facebook text-2xl"></i>
-                                <p class="text-gray-200 hover:text-gray-800 text-sm">Facebook</p>
+                        <h2 class="text-gray-200 font-semibold mb-2 text-center">Síguenos</h2>
+                        <div class="grid grid-cols-2 gap-2">
+                            <!-- Facebook -->
+                            <a href="#"
+                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
+                                <i class="fab fa-facebook text-2xl text-white group-hover:text-black transition"></i>
+                                <p class="text-white group-hover:text-black text-sm transition">Facebook</p>
                             </a>
-                            <a href="#" class="social-icon text-red-600 text-center">
-                                <i class="fab fa-twitter text-2xl"></i>
-                                <p class="text-gray-200 hover:text-gray-800 text-sm">Twitter</p>
+                            <!-- Twitter -->
+                            <a href="#"
+                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
+                                <i class="fab fa-twitter text-2xl text-white group-hover:text-black transition"></i>
+                                <p class="text-white group-hover:text-black text-sm transition">Twitter</p>
                             </a>
-                            <a href="#" class="social-icon text-red-600 text-center">
-                                <i class="fab fa-tiktok text-2xl"></i>
-                                <p class="text-gray-200 hover:text-gray-800 text-sm">TikTok</p>
+                            <!-- TikTok -->
+                            <a href="#"
+                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
+                                <i class="fab fa-tiktok text-2xl text-white group-hover:text-black transition"></i>
+                                <p class="text-white group-hover:text-black text-sm transition">TikTok</p>
                             </a>
-                            <a href="#" class="social-icon text-red-600 text-center">
-                                <i class="fab fa-instagram text-2xl"></i>
-                                <p class="text-gray-200 hover:text-gray-800 text-sm">Instagram</p>
+                            <!-- Instagram -->
+                            <a href="#"
+                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
+                                <i class="fab fa-instagram text-2xl text-white group-hover:text-black transition"></i>
+                                <p class="text-white group-hover:text-black text-sm transition">Instagram</p>
                             </a>
                         </div>
                     </div>
+
+
                     <div class="w-full md:w-6/7">
                     </div>
                 </div>
@@ -294,7 +306,6 @@
                     <p class="text-sm" style="color: white">2024 <span class="font-semibold">Fundación
                             Emanuel</span>. Todos los derechos
                         reservados</p>
-                    <a href="#" class="text-red-600 text-sm  ">Políticas de privacidad y protección de datos</a>
                 </div>
             </div>
         </div>
