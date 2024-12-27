@@ -2,58 +2,57 @@
 @section('Navs', 'Vision')
 @section('contenido')
 
-    <div class="relative mt-4 bg-white py-10">
-        <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-5xl">
-            <div class="col-12 animate__animated animate__fadeIn">
-                <h2 class="text-center text-3xl font-bold text-gray-800 mb-6" style="font-family: Cooper Black">GRUPO EMANUEL</h2>
-                <p class="text-center text-gray-600 mb-8" style="text-justify: "
-                    style="font-family: Calibri;text-align: justify;">
-                    Más de 16 años de experiencia proveendo productos para el Sector Construcción, Industrial,
-                    deportivo y Logístico.
-                </p>
-                <div class="grid gap-6 md:grid-cols-2 animate__animated animate__fadeInUp">
+<div class="relative mt-4 bg-white py-10">
+    <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-5xl">
+        <div class="col-12 animate__animated animate__fadeIn">
+            <h2 class="text-center text-3xl font-bold text-gray-800 mb-6" style="font-family: Cooper Black">GRUPO EMANUEL</h2>
+            <p class="text-center text-gray-600 mb-8" style="font-family: Calibri;text-align: center;">
+                Más de 16 años de experiencia proveendo productos para el Sector Construcción, Industrial,
+                deportivo y Logístico.
+            </p>
+            <div class="grid gap-6 md:grid-cols-2 items-center animate__animated animate__fadeInUp">
+                <!-- Imágenes -->
+                <div class="relative flex justify-center">
+                    <img src="/img/carrusel/equipo.jpg" alt="Equipo"
+                        class="mx-auto w-72 h-72 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 hover:rotate-2">
+                </div>
 
-                    <!-- Imágenes y Brochure -->
-                    <div class="relative flex justify-center">
-                        <img src="/img/carrusel/equipo.jpg" alt="Equipo"
-                            class="mx-auto w-72 h-72 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 hover:rotate-2">
+                <!-- Contenido de Texto -->
+                <div class="space-y-6">
+                    <!-- Sobre Nosotros -->
+                    <div class="animate__animated animate__fadeInLeft">
+                        <h2 class="text-2xl font-bold text-gray-800" style="font-family: Cooper Black">Sobre Nosotros</h2>
+                        <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
+                            Emanuel R.L.G, es un grupo privado fundado en el año 2008, dedicado a la Gestión
+                            ferretera, proyectos y/o formalización de actividades en curso de empresas que operan en
+                            diversos sectores productivos a nivel nacional.
+                        </p>
                     </div>
 
-                    <!-- Contenido de Texto -->
-                    <div class="space-y-6">
-                        <!-- Sobre Nosotros -->
-                        <div class="animate__animated animate__fadeInLeft">
-                            <h2 class="text-2xl font-bold text-gray-800" style="font-family: Cooper Black">Sobre Nosotros</h2>
-                            <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
-                                Emanuel R.L.G, es un grupo privado fundado en el año 2008, dedicado a la Gestión
-                                ferretera, proyectos y/o formalización de actividades en curso de empresas que operan en
-                                diversos sectores productivos a nivel nacional.
-                            </p>
-                        </div>
+                    <!-- Misión -->
+                    <div class="animate__animated animate__fadeInLeft">
+                        <h2 class="text-2xl font-bold text-gray-800" style="font-family: Cooper Black">Misión</h2>
+                        <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
+                            Somos un equipo multidisciplinario de especialistas en consultoría ambiental, legal y
+                            administrativa, orientados a proporcionar las mejores soluciones integrales a los
+                            diversos retos de cada proyecto que emprenden nuestros clientes.
+                        </p>
+                    </div>
 
-                        <!-- Misión -->
-                        <div class="animate__animated animate__fadeInLeft">
-                            <h2 class="text-2xl font-bold text-gray-800">Misión</h2>
-                            <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
-                                Somos un equipo multidisciplinario de especialistas en consultoría ambiental, legal y
-                                administrativa, orientados a proporcionar las mejores soluciones integrales a los
-                                diversos retos de cada proyecto que emprenden nuestros clientes.
-                            </p>
-                        </div>
-
-                        <!-- Visión -->
-                        <div class="animate__animated animate__fadeInLeft">
-                            <h2 class="text-2xl font-bold text-gray-800" style="font-family: Cooper Black">Visión</h2>
-                            <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
-                                Ser una organización líder en soluciones para sectores clave, comprometida con el
-                                desarrollo sostenible y la innovación constante.
-                            </p>
-                        </div>
+                    <!-- Visión -->
+                    <div class="animate__animated animate__fadeInLeft">
+                        <h2 class="text-2xl font-bold text-gray-800" style="font-family: Cooper Black">Visión</h2>
+                        <p class="text-gray-600 mt-2" style="font-family: Calibri;text-align: justify;">
+                            Ser una organización líder en soluciones para sectores clave, comprometida con el
+                            desarrollo sostenible y la innovación constante.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
 
 
     <!-- Valores -->

@@ -19,7 +19,7 @@
                     </p>
                 </div>
                 <div class="lg:w-1/2 flex justify-center ">
-                    <img src="/img/carrusel/EquipoE3.jpg" alt="Gerencia"
+                    <img src="/img/Publicidad/equipo2.jpg" alt="Gerencia"
                         class="w-1/2 rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
                 </div>
 
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="lg:w-1/2 flex justify-center order-last lg:order-first">
-                    <img src="/img/Publicidad/logistica.jpg" alt="Logística"
+                    <img src="/img/Publicidad/logistica.jpeg" alt="Logística"
                         class="w-1/2 max-w-xs lg:max-w-sm rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="lg:w-1/2 flex justify-center order-last lg:order-first">
-                    <img src="/img/carrusel/EquipoE3.jpg" alt="Comercial"
+                    <img src="/img/Publicidad/EquipoE3.jpg" alt="Comercial"
                         class="w-1/2 max-w-xs lg:max-w-sm rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     </p>
                 </div>
                 <div class="lg:w-1/2 flex justify-center ">
-                    <img src="/img/carrusel/EquipoE3.jpg" alt="Operaciones"
+                    <img src="/img/Publicidad/EquipoE3.jpg" alt="Operaciones"
                         class="w-1/2 rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
                 </div>
             </div>
