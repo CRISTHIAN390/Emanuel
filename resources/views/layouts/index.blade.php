@@ -3,24 +3,27 @@
 @section('contenido')
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
-        <div class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn" >
+        <div
+            class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn">
             <div class="overflow-hidden border-b-4 h-full w-full relative">
                 <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
                     <!-- Imagen 1 -->
                     <div class="flex-none w-full h-full relative">
-                        <!-- Imagen con desenfoque y oscurecimiento -->
-                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1" class="object-cover w-full h-full brightness-50">
+                        <!-- Imagen con oscurecimiento sutil -->
+                        <div class="absolute inset-0 bg-black/30"></div>
+                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1" class="object-cover w-full h-full">
+
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
                             <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
                                 style="margin-left: 20px; /* Espaciado por defecto */
-                               margin-left: 60px; /* Espaciado en pantallas más grandes */">
+                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
                                 <h1 class="text-white font-bold"
                                     style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                   font-family: 'Comic Sans MS', cursive, sans-serif;
-                                   background: #000823; 
-                                   border-radius: 40px; 
-                                   padding: 10px 20px;">
+                                font-family: 'Lucida Bright', Georgia, serif;
+                                background: #000823; 
+                                border-radius: 20px; 
+                                padding: 12px 20px;">
                                     GRUPO EMANUEL RLG
                                 </h1>
                             </div>
@@ -38,10 +41,10 @@
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
                                 <h1 class="text-white font-bold"
                                     style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                   font-family: 'Comic Sans MS', cursive, sans-serif;
+                                   font-family:   'Lucida Bright', Georgia, serif;
                                    background: #000823; 
-                                    border-radius: 40px; 
-                                   padding: 10px 20px;">
+                                   border-radius: 20px; 
+                                   padding: 12px 20px;">
                                     GRUPO EMANUEL RLG
                                 </h1>
                             </div>
@@ -58,10 +61,10 @@
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
                                 <h1 class="text-white font-bold"
                                     style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                   font-family: 'Comic Sans MS', cursive, sans-serif;
+                                    font-family:   'Lucida Bright', Georgia, serif;
                                    background: #000823; 
-                                      border-radius: 40px; 
-                                   padding: 10px 20px;">
+                                   border-radius: 20px; 
+                                   padding: 12px 20px;">
                                     GRUPO EMANUEL RLG
                                 </h1>
                             </div>
@@ -78,10 +81,10 @@
                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
                                 <h1 class="text-white font-bold"
                                     style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                   font-family: 'Comic Sans MS', cursive, sans-serif;
+                                     font-family:   'Lucida Bright', Georgia, serif;
                                    background: #000823; 
-                                      border-radius: 40px; 
-                                   padding: 10px 20px;">
+                                   border-radius: 20px; 
+                                   padding: 12px 20px;">
                                     GRUPO EMANUEL RLG
                                 </h1>
                             </div>
@@ -102,26 +105,25 @@
 
 
 
-        <!-- Añadir contenido -->
+        <!-- Contenido -->
         <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
             <div
-                class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-start text-center md:text-left p-6 hover:shadow-xl transition-shadow 
-                 duration-500">
+                class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-center text-center md:text-left p-6 hover:shadow-xl transition-shadow 
+             duration-500">
 
                 <!-- Imagen -->
-                <div class="w-full md:w-1/2 lg:w-4/12 mb-4 md:mb-0 p-8">
+                <div class="w-full md:w-1/2 lg:w-4/12 mb-4 md:mb-0 p-8 flex justify-center md:justify-start">
                     <img src="/img/carrusel/equipo.jpg" alt="Servicentro"
-                        class="mx-auto md:mx-0 w-full h-[250px] object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+                        class="w-full h-[250px] object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none shadow-xl">
                 </div>
 
-                <!-- Texto de descripción -->
-                <div class="w-full md:w-1/2 lg:w-9/12 p-6">
 
+                <!-- Texto de descripción -->
+                <div class="w-full md:w-1/2 lg:w-9/12 p-6 flex flex-col justify-center">
                     <!-- Logo -->
-                    <div class="flex items-center logo">
+                    <div class="flex items-center logo mb-4">
                         <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
                     </div>
-                    <br>
                     <p class="text-gray-700 mb-6 leading-relaxed text-justify">
                         En Grupo Emanuel SRL, nos dedicamos a brindar servicios generales
                         con un firme compromiso de excelencia. Somos un equipo de profesionales
@@ -131,23 +133,20 @@
                     </p>
 
                     <div style="background: #f8c740;color: #001c77;"
-                        class="  rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0 ">
-                        <div class="flex flex-col items-center animate__animated animate__pulse" style="text-align: center">
-                            <span class="text-3xl font-bold" style="text-align: center">+16</span>
+                        class="rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
+                        <div class="flex flex-col items-center animate__animated animate__pulse">
+                            <span class="text-3xl font-bold">+17</span>
                             <span class="text-sm">Años de experiencia</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center" style="text-align: center">
+                        <div class="flex flex-col items-center">
                             <span class="text-3xl font-bold">+350</span>
                             <span class="text-sm">Clientes Satisfechos</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center" style="text-align: center">
+                        <div class="flex flex-col items-center">
                             <span class="text-3xl font-bold">+400</span>
                             <span class="text-sm">Proyectos ejecutados</span>
                         </div>
-                        <hr class="border-t border-white my-4 md:hidden">
-                        <div class="flex flex-col items-center" style="text-align: center">
+                        <div class="flex flex-col items-center">
                             <span class="text-3xl font-bold">+15</span>
                             <span class="text-sm">Profesionales Calificados</span>
                         </div>
