@@ -19,9 +19,9 @@ Route::get('/emanuel/servicentro', [RutasController::class,'Servicentro'])->name
 
 //Para Envio de mensajes
 
-// Para mostrar el formulario de contacto
-Route::get('/emanuel/contacto/consulta', [RutasController::class,'Contacto'])->name('serv_consulta'); 
-// Para enviar los datos al controlador
-Route::post('/emanuel/contacto', [RutasController::class,'Registro'])->name('consultas');   
+// Ruta para mostrar el formulario de contacto
+Route::get('/emanuel/contact/consulta', [RutasController::class, 'Contacto'])->name('serv_consulta');
+// Ruta para procesar el envío del formulario
+Route::post('/emanuel/contact', [RutasController::class, 'Registro'])->name('consultas');
 
 

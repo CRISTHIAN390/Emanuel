@@ -47,7 +47,7 @@
                         </button>
 
                         <!-- Botón de comprobante de pago -->
-                        <a href="URL_DEL_COMPROBANTE"
+                        <a href="#"
                             class="w-full md:w-auto py-3 px-6 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg hover:from-gray-600 hover:to-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 text-center">
                             Ver Comprobante
                         </a>
