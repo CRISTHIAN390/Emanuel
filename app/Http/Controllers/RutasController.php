@@ -39,7 +39,7 @@ class RutasController extends Controller
         Mail::to('xcrissx12345@gmail.com')->send(new ConsultaMail($details));
 
         // Redireccionar a la vista con mensaje de éxito
-        return redirect()->route('consultas')->with('success', 'El mensaje ha sido enviado con éxito.');
+        return redirect()->route('serv_consulta')->with('success', 'El mensaje ha sido enviado con éxito.');
     }
     
     
