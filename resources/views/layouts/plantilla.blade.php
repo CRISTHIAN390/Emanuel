@@ -183,7 +183,9 @@
     </script>
     <!-- Cuerpo -->
     <section>
-        @yield('contenido')
+        <div class="relative      min-h-screen flex   flex-col ">
+            @yield('contenido')
+        </div>
         <a href="https://wa.me/917700319?text=Me%20gustaría%20consultar%20el%20informacion" class="whatsapp"
             target="_blank">
             <i class="fab fa-whatsapp whatsapp-icon"></i>

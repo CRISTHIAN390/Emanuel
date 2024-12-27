@@ -3,7 +3,7 @@
 @section('contenido')
 
  
-<div class="relative min-h-screen flex flex-col animate__animated animate__zoomIn">
+<div class="relative min-h-screen flex py-8 flex-col animate__animated animate__zoomIn">
    
     <!-- Imagen de ancho completo como cabecera -->
     <div class="relative w-full animate__animated animate__zoomIn">

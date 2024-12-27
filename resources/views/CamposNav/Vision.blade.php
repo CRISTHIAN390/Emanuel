@@ -1,7 +1,8 @@
 @extends('layouts.plantilla')
 @section('Navs', 'Vision')
 @section('contenido')
-
+<div class="relative      min-h-screen flex   flex-col animate__animated animate__zoomIn" style="background-size: cover; background-position: center;">
+ 
 <div class="relative mt-4 bg-white py-10">
     <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-5xl">
         <div class="col-12 animate__animated animate__fadeIn">
@@ -146,7 +147,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 

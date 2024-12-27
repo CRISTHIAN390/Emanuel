@@ -1,7 +1,7 @@
 @extends('layouts.plantilla')
 @section('Navs', 'Vision')
 @section('contenido')
-<div class="relative mt-4 py-10 animate__animated animate__zoomIn" style="background-size: cover; background-position: center;">
+<div class="relative mt-4 py-10  min-h-screen flex   flex-col animate__animated animate__zoomIn" style="background-size: cover; background-position: center;">
     <h2 class="text-center text-3xl font-bold text-gray-800 mb-6" style="font-family: Cooper Black">NUESTRO EQUIPO</h2>
     <div class="container mx-auto px-6 lg:px-8 space-y-10 lg:max-w-5xl">
 
