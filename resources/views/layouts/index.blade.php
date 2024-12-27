@@ -127,7 +127,7 @@
                     <p class="text-gray-700 mb-6 leading-relaxed text-justify">
                         En Grupo Emanuel SRL, nos dedicamos a brindar servicios generales
                         con un firme compromiso de excelencia. Somos un equipo de profesionales
-                        con más de 16 años de sólida experiencia en el sector, impulsados por la
+                        con más de 17 años de sólida experiencia en el sector, impulsados por la
                         misión de identificar y satisfacer las necesidades del mercado, transformándonos
                         en agentes de cambio.
                     </p>
