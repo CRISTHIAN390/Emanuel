@@ -244,7 +244,7 @@
                             </li>
                             <li><a href="{{ route('cat_rutaVis') }}" class="hover:text-red-600">Vision, Mision y
                                     valores</a></li>
-                            <li><a href="{{ route('consultas') }}" class="hover:text-red-600">Contactanos</a></li>
+                            <li><a href="{{ route('serv_consulta') }}" class="hover:text-red-600">Contactanos</a></li>
                         </ul>
                     </div>
 

@@ -7,10 +7,10 @@
    
     <!-- Imagen de ancho completo como cabecera -->
     <div class="relative w-full animate__animated animate__zoomIn">
-        <img src="/img/Contenido/Comunidad.jpg" alt="" class="w-full h-[300px] object-cover">
+        <img src="/img/Contenido/Comunidad.jpeg" alt="" class="w-full h-[300px] object-cover">
         <!-- Texto superpuesto en la parte inferior de la imagen -->
         <div class="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white px-4 py-2">
-            <p class="text-sm">Carretera **** – ****** - Huamachuco</p>
+           <!-- <p class="text-sm">Carretera **** – ****** - Huamachuco</p>  -->
         </div>
     </div>
 
@@ -19,7 +19,7 @@
         class="px-6 lg:px-16 py-10 bg-white text-gray-800 flex flex-col lg:flex-row lg:items-center lg:space-x-8 animate__animated animate__zoomIn">
         <!-- Texto de la sección -->
         <div class="lg:w-2/3">
-            <h2 class="text-3xl font-semibold mb-4 border-b-4 border-indigo-500 inline-block">Gestión de Responsabilidad
+            <h2 class="text-3xl font-semibold mb-4 border-b-4 border-yellow-500 inline-block">Gestión de Responsabilidad
                 Social</h2>
             <p class="text-lg mt-4 text-justify animate__animated animate__zoomIn">
                 En nuestra organización, asumimos el compromiso de contribuir a un desarrollo sostenible, reflejado en
