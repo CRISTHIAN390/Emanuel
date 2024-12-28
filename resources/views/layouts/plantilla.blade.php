@@ -194,111 +194,101 @@
     <!-- Footer -->
     <footer>
         <div class="w-full py-8" style="background: #ef8e00;">
-            <div class="flex flex-col md:flex-row justify-center md:space-x-16 space-y-4 md:space-y-0 text-white"
-                style="margin-left: 5%">
+            <div
+                class="flex flex-col md:flex-row justify-center items-center md:space-x-16 space-y-4 md:space-y-0 text-white mx-auto px-4">
+
                 <!-- Sección de Correo -->
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z" />
                     </svg>
                     <div>
-                        <p class="text-xl font-semibold" style="color:#000823">Email Correo</p>
-                        <p class="text-lg" style="color:#000823">GrupoEmanuel@gmail.com</p>
+                        <p class="text-xl font-semibold" style="color:#000823;">Correo Electrónico</p>
+                        <p class="text-lg" style="color:#000823;">GrupoEmanuel@gmail.com</p>
                     </div>
                 </div>
 
                 <!-- Sección de Teléfono -->
-                <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z" />
                     </svg>
                     <div>
-                        <p class="text-xl font-semibold" style="color:#000823">Llámanos</p>
-                        <p class="text-lg" style="color:#000823">+51 --- --- ---</p>
+                        <p class="text-xl font-semibold" style="color:#000823;">Llámanos</p>
+                        <p class="text-lg" style="color:#000823;">+51 --- --- ---</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-full py-8" style="background: #000823;color:white">
+
+
+        <div class="w-full py-8 bg-gray-900 text-white" style="background: #000823">
             <div class="container mx-auto px-4">
-                <div class="flex flex-wrap md:flex-nowrap justify-around items-start">
-                    <!-- Menú de Navegación -->
-                    <div class="w-full md:w-1/7">
-                    </div>
+                <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
+
+                    <!-- Columna Vacía Izquierda -->
+                    <div class="w-full md:w-1/12"></div>
+
                     <!-- Información sobre Fundación -->
-                    <div class="w-full md:w-2/7">
-                        <h2 class="text-gray-300 font-semibold mb-2">Fundación Emanuel</h2>
-                        <p class="text-gray-300 text-sm text-justify ">
+                    <div class="w-full md:w-3/12">
+                        <!-- Contenedor del Logo -->
+                        <div class="flex justify-center mb-4">
+                            <img src="/img/logo-n.png" alt="Logo Fundación Emanuel" class="w-40 object-contain">
+                        </div>
+                        <!-- Descripción -->
+                        <p class="text-gray-400 text-sm leading-relaxed text-justify" style="padding-right: 20px;">
                             Fundación Emanuel proporciona recursos para potenciar las habilidades de sus clientes, con
                             énfasis en proyectos sostenibles, innovación y apoyo al desarrollo personal y profesional,
                             promoviendo el progreso del país.
                         </p>
                     </div>
-                    <div class="w-full md:w-3/7" style="margin-left: 3%">
-                        <h2 class="text-gray-300 font-semibold mb-2">Menú</h2>
-                        <ul class="text-gray-200 space-y-1 list-disc list-inside">
-                            <li><a href="{{ route('home') }}" class="hover:text-red-600">Inicio</a></li>
-                            <li><a href="{{ route('cat_rutaEq') }}" class="hover:text-red-600">Nuestro Equipo</a>
+
+
+                    <!-- Menú de Navegación -->
+                    <div class="w-full md:w-2/12">
+                        <h2 class="text-lg font-semibold text-gray-200 mb-4">Menú</h2>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                            <li><a href="{{ route('home') }}" class="hover:text-red-500">Inicio</a></li>
+                            <li><a href="{{ route('cat_rutaEq') }}" class="hover:text-red-500">Nuestro Equipo</a>
                             </li>
-                            <li><a href="{{ route('cat_rutaVis') }}" class="hover:text-red-600">Vision, Mision y
-                                    valores</a></li>
-                            <li><a href="{{ route('serv_consulta') }}" class="hover:text-red-600">Contactanos</a></li>
+                            <li><a href="{{ route('cat_rutaVis') }}" class="hover:text-red-500">Visión, Misión y
+                                    Valores</a></li>
+                            <li><a href="{{ route('serv_consulta') }}" class="hover:text-red-500">Contáctanos</a>
+                            </li>
                         </ul>
                     </div>
 
-
                     <!-- Información de Contacto -->
-                    <div class="w-full md:w-4/7">
-                        <h2 class="text-gray-200 font-semibold mb-2">Dirección de la oficina</h2>
-                        <p class="text-gray-300 text-sm mb-2">
-                            Avenida Camino Real, Mz32 Lt.2 Trujillo, Perú
-                        </p>
-                        <h2 class="text-gray-400 font-semibold mb-2">Contacto</h2>
-                        <p class="text-gray-300 text-sm">Celular: 922457777</p>
-                        <h2 class="text-gray-400 font-semibold mb-2">Correo</h2>
-                        <p class="text-gray-300 text-sm">Correo:----------</p>
+                    <div class="w-full md:w-3/12">
+                        <h2 class="text-lg font-semibold text-gray-200 mb-4">Contacto</h2>
+                        <p class="text-gray-400 text-sm">Dirección: Avenida Camino Real, Mz32 Lt.2, Trujillo, Perú</p>
+                        <p class="text-gray-400 text-sm mt-2">Celular: 922457777</p>
+                        <p class="text-gray-400 text-sm mt-2">Correo: ----------</p>
                     </div>
 
-
-                    <!-- Redes Sociales -->
-                    <div class="w-full md:w-5/7">
-                        <h2 class="text-gray-200 font-semibold mb-2 text-center">Síguenos</h2>
-                        <div class="grid grid-cols-2 gap-2">
-                            <!-- Facebook -->
-                            <a href="#"
-                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
-                                <i class="fab fa-facebook text-2xl text-white group-hover:text-black transition"></i>
-                                <p class="text-white group-hover:text-black text-sm transition">Facebook</p>
-                            </a>
-                            <!-- Twitter -->
-                            <a href="#"
-                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
-                                <i class="fab fa-twitter text-2xl text-white group-hover:text-black transition"></i>
-                                <p class="text-white group-hover:text-black text-sm transition">Twitter</p>
-                            </a>
-                            <!-- TikTok -->
-                            <a href="#"
-                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
-                                <i class="fab fa-tiktok text-2xl text-white group-hover:text-black transition"></i>
-                                <p class="text-white group-hover:text-black text-sm transition">TikTok</p>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="#"
-                                class="social-icon text-center group bg-transparent hover:bg-white rounded-lg py-2 transition">
-                                <i class="fab fa-instagram text-2xl text-white group-hover:text-black transition"></i>
-                                <p class="text-white group-hover:text-black text-sm transition">Instagram</p>
-                            </a>
-                        </div>
+                    <!-- Servicios -->
+                    <div class="w-full md:w-2/12">
+                        <h2 class="text-lg font-semibold text-gray-200 mb-4">Servicios</h2>
+                        <ul class="list-disc list-inside space-y-2 text-gray-400">
+                            <li><a href="{{ route('serv_hotel') }}" class="hover:text-red-500">Hotel</a></li>
+                            <li><a href="{{ route('serv_complejo') }}" class="hover:text-red-500">Complejo
+                                    Deportivo</a>
+                            </li>
+                            <li><a href="{{ route('serv_ferreteria') }}" class="hover:text-red-500">ProFerretería</a>
+                            </li>
+                            <li><a href="{{ route('serv_servicentro') }}" class="hover:text-red-500">Servicentro</a>
+                            </li>
+                        </ul>
                     </div>
 
-
-                    <div class="w-full md:w-6/7">
-                    </div>
+                    <!-- Columna Vacía Derecha -->
+                    <div class="w-full md:w-1/12"></div>
                 </div>
             </div>
         </div>
+
 
 
         <div class="bg-white w-full py-4" style="text-align: center;background: black">
