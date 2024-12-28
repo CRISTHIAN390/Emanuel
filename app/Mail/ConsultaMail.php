@@ -16,6 +16,9 @@ class ConsultaMail extends Mailable
      * Create a new message instance.
      */
     public $details;
+    /**  
+    *@return void
+    */
     public function __construct($details)
     {
         $this->details = $details;
@@ -36,7 +39,7 @@ class ConsultaMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Consulta Mail',
+            subject: 'Enviar correo',
         );
     }
 
@@ -46,7 +49,7 @@ class ConsultaMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'emails.consulta',
         );
     }
 
