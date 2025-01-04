@@ -46,7 +46,7 @@
                 </p>
             </div>
             <div class="lg:w-1/2 flex justify-center">
-                <img src="/img/Publicidad/EquipoE3.jpg" alt="Comercial" class="w-1/2  lg:max-w-sm rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
+                <img src="/img/Publicidad/comercial.png" alt="Comercial" class="w-1/2  lg:max-w-sm rounded-xl shadow-lg transition-transform duration-500 hover:scale-110">
             </div>
         </div>
 
