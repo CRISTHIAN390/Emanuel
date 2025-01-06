@@ -14,8 +14,8 @@
             <div class="grid gap-6 md:grid-cols-2 items-center animate__animated animate__fadeInUp">
                 <!-- Imágenes -->
                 <div class="relative flex justify-center">
-                    <img src="/img/Publicidad/MSion.jepg" alt="Equipo"
-                        class="mx-auto w-72 h-72 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 hover:rotate-2">
+                    <img src="/img/carrusel/MSion.jpeg" alt="Equipo"
+                        class="mx-auto w-128 h-72 rounded-xl shadow-lg transition-transform duration-500 hover:scale-105 hover:rotate-2">
                 </div>
 
                 <!-- Contenido de Texto -->
