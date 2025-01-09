@@ -216,7 +216,7 @@
                     <!-- Tarjeta 4 -->
                     <div
                         class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
-                        <img src="/img/servicios/servicentro.jpg" alt="Servicentro"
+                        <img src="/img/servicios/servicentro1.jpg" alt="Servicentro"
                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
                         <div
                             class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
