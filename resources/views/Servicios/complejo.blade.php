@@ -117,12 +117,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col bg-blue-600 p-6 lg:p-10 rounded-lg shadow-lg mt-8">
+                <div class="flex flex-col bg-blue-700 p-6 lg:p-10 rounded-lg shadow-lg mt-8">
                     <!-- Contenedor principal -->
                     <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-12">
                       <!-- Información de reserva -->
                       <div class="flex-1 space-y-4 ">
-                        <h3 class="text-2xl font-bold  ">Datos del Complejo Deportivo Triple G</h3>
+                        <h3 class="text-2xl font-bold text-yellow-200  ">Datos del Complejo Deportivo Triple G</h3>
                         <p class="text-base text-white">Teléfono: +51 949 931 907</p>
                         <p class="text-base text-white">Ubicación: Trujillo, Perú</p>
                         <p class="text-base text-white">
@@ -154,7 +154,7 @@
                   
                     <!-- Tabla de horarios -->
                     <div class="mt-6">
-                      <h4 class="text-lg lg:text-xl font-bold   mb-4">Horarios de Atención</h4>
+                      <h4 class="text-lg lg:text-xl font-bold text-yellow-200   mb-4">Horarios de Atención</h4>
                       <div class="overflow-x-auto">
                         <table class="table-auto w-full border border-gray-300 rounded-lg shadow-sm text-left text-sm lg:text-base">
                           <thead class="bg-gray-200">
@@ -170,13 +170,13 @@
                           </thead>
                           <tbody>
                             <tr class="border-t border-gray-300 bg-white">
-                              <td class="px-4 py-2 xl:text-md">8:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">1:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">2:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">3:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">5:00 AM - 8:00 PM</td>
-                              <td class="px-4 py-2 xl:text-md">6:00 AM - 8:00 PM</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
+                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
                             </tr>
                           </tbody>
                         </table>
