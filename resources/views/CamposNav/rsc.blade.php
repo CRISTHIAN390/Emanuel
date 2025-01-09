@@ -59,7 +59,7 @@
             <img src="/img/Contenido/Comunidad33.jpg" alt="Responsabilidad Social"
                 class="w-full h-auto rounded-lg shadow-md">
             <!-- Pie de texto -->
-            <p class="text-sm text-center mt-2 text-gray-600 italic">***** - *****, Huamachuco</p>
+            <p class="text-sm text-center mt-2 text-gray-600 italic">Shiracmaca, Huamachuco Sanchez Carrion</p>
         </div>
     </div>
 </div>

@@ -47,7 +47,7 @@
 
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
-                            <img src="/img/Publicidad/distribuidora1.jpg" alt="Distribuidora de materiales de construcción"
+                            <img src="/img/Publicidad/Ferretera.jpg" alt="Distribuidora de materiales de construcción"
                                 class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                     <div class="grid gap-6 lg:grid-cols-2 lg:space-x-6 animate__animated animate__fadeInUp mt-6">
                         <!-- Imagen -->
                         <div class="order-1 lg:order-1 flex justify-center">
-                            <img src="/img/Publicidad/distribuidora2.jpg" alt="Herramientas eléctricas"
+                            <img src="/img/Publicidad/Ferretera1.jpg" alt="Herramientas eléctricas"
                                 class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
                         <!-- Texto en tarjeta solo en pantallas grandes -->
@@ -108,7 +108,7 @@
 
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
-                            <img src="/img/Publicidad/distribuidora3.jpg" alt="Servicios adicionales de la distribuidora"
+                            <img src="/img/Publicidad/Ferretera2.jpg" alt="Servicios adicionales de la distribuidora"
                                 class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
                     </div>

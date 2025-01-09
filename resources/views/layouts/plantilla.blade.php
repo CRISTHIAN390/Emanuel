@@ -205,7 +205,7 @@
                     </svg>
                     <div>
                         <p class="text-xl font-semibold" style="color:#000823;">Correo Electrónico</p>
-                        <p class="text-lg" style="color:#000823;">GrupoEmanuel@gmail.com</p>
+                        <p class="text-lg" style="color:#000823;">GEmanuel@grupoemanuelrlg.com</p>
                     </div>
                 </div>
 
@@ -217,7 +217,7 @@
                     </svg>
                     <div>
                         <p class="text-xl font-semibold" style="color:#000823;">Llámanos</p>
-                        <p class="text-lg" style="color:#000823;">+51 --- --- ---</p>
+                        <p class="text-lg" style="color:#000823;">+51 949 931 907</p>
                     </div>
                 </div>
             </div>
@@ -264,8 +264,8 @@
                     <div class="w-full md:w-3/12">
                         <h2 class="text-lg font-semibold text-gray-200 mb-4">Contacto</h2>
                         <p class="text-gray-400 text-sm">Dirección: Avenida Camino Real, Mz32 Lt.2, Trujillo, Perú</p>
-                        <p class="text-gray-400 text-sm mt-2">Celular: 922457777</p>
-                        <p class="text-gray-400 text-sm mt-2">Correo: ----------</p>
+                        <p class="text-gray-400 text-sm mt-2">Celular: +51 949 931 907</p>
+                        <p class="text-gray-400 text-sm mt-2">Correo: GEmanuel@grupoemanuelrlg.com</p>
                     </div>
 
                     <!-- Servicios -->
