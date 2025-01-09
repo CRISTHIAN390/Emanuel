@@ -111,6 +111,7 @@
                             
                         </div>
 
+                        
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/imagencomplejo3.jpeg" alt="Ventajas del complejo deportivo"
