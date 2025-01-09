@@ -50,7 +50,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/complejo1.jpg" alt="Complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl   hover:shadow-[#FFD700]">
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-1 flex justify-center">
                             <img src="/img/Publicidad/imagencomplejo4.jpeg" alt="Complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl   hover:shadow-[#FFD700]">
                         </div>
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-2 flex items-center justify-center mt-6">
@@ -114,7 +114,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/imagencomplejo3.jpeg" alt="Ventajas del complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:shadow-[#F00700]">
                         </div>
                     </div>
                 </div>
