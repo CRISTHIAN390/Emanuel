@@ -2,11 +2,12 @@
 @section('Principal', 'Inicio')
 @section('contenido')
     <div class="relative mt-4 bg-white">
-<!-- Carrusel -->
-<div class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn">
-    <div class="overflow-hidden border-b-4 h-full w-full relative">
-        <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
-           <!-- Imagen 1 -->
+        <!-- Carrusel -->
+        <div
+            class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn">
+            <div class="overflow-hidden border-b-4 h-full w-full relative">
+                <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
+                    <!-- Imagen 1 -->
                     <div class="flex-none w-full h-full relative">
                         <!-- Imagen con oscurecimiento sutil -->
                         <div class="absolute inset-0 bg-black/30"></div>
