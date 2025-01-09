@@ -61,6 +61,7 @@
             <!-- Pie de texto -->
             <p class="text-sm text-center mt-2 text-gray-600 italic">Shiracmaca, Huamachuco Sanchez Carrion</p>
         </div>
+        
     </div>
 </div>
 
