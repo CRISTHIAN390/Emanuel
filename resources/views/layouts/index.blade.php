@@ -11,7 +11,7 @@
                     <div class="flex-none w-full h-full relative">
                         <!-- Imagen con oscurecimiento sutil -->
                         <div class="absolute inset-0 bg-black/30"></div>
-                        <img src="/img/carrusel/imagen1.jpg" alt="Imagen 1" class="object-cover w-full h-full">
+                        <img src="/img/carrusel/imagen11.jpg" alt="Imagen 1" class="object-cover w-full h-full">
 
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
@@ -32,7 +32,7 @@
 
                     <!-- Imagen 2 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen2.jpg" alt="Imagen 2"
+                        <img src="/img/carrusel/imagen22.jpg" alt="Imagen 2"
                             class="object-cover w-full h-full brightness-50">
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
@@ -52,7 +52,7 @@
                     </div>
                     <!-- Imagen 3 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen3.jpg" alt="Imagen 3"
+                        <img src="/img/carrusel/imagen33.jpg" alt="Imagen 3"
                             class="object-cover w-full h-full brightness-50">
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
@@ -72,7 +72,7 @@
                     </div>
                     <!-- Imagen 4 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen4.jpg" alt="Imagen 4"
+                        <img src="/img/carrusel/imagen44.jpg" alt="Imagen 4"
                             class="object-cover w-full h-full brightness-50">
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
