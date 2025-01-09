@@ -108,6 +108,7 @@
                                     <li>Programas de entrenamiento personalizados</li>
                                 </ul>
                             </div>
+                            
                         </div>
 
                         <!-- Imagen -->
