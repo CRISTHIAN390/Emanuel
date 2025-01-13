@@ -11,82 +11,143 @@
                     <div class="flex-none w-full h-full relative">
                         <!-- Imagen con oscurecimiento sutil -->
                         <div class="absolute inset-0 bg-black/30"></div>
-                        <img src="/img/carrusel/imagen11.jpg" alt="Imagen 1" class="object-cover w-full h-full">
-
-                        <!-- Contenido de texto -->
+                        <img src="/img/carrusel/imagen11.jpg" alt="Imagen 1" class="object-cover w-full h-full"  style="filter: brightness(0.8);">                        <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
-                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="margin-left: 20px; /* Espaciado por defecto */
-                                margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                                <h1 class="text-white font-bold"
-                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                font-family: 'Lucida Bright', Georgia, serif;
-                                background: #000823; 
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[60%]" style="
+                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
+                                    max-width: 60%; /* Ancho máximo del contenedor */
+                                ">
+                                <h4 class="text-white font-bold" style="
+                                font-size: 2.5vw; /* Tamaño dinámico responsivo */
+                                font-family: 'Montserrat', sans-serif;
                                 border-radius: 20px; 
-                                padding: 12px 20px;">
-                                    GRUPO EMANUEL RLG
-                                </h1>
+                                padding: 12px 20px;
+                                text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra para las letras */
+                                font-weight: bold;
+                                max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+                                margin-left: auto;
+                                margin-right: auto;
+                                text-align: left; 
+                            ">
+                                    DESCANSA Y RELÁJATE EN NUESTRO HOTEL, DONDE CADA DETALLE ESTÁ PENSADO PARA TU
+                                    COMODIDAD
+                                </h4>
+                                <div style="margin-left: 20%" >
+                                    <a href="{{ route('serv_hotel') }}" 
+                                    class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
+                                    transform sm:scale-100 scale-90">
+                                Ver más
+                                    </a>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Imagen 2 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen22.jpg" alt="Imagen 2"
-                            class="object-cover w-full h-full brightness-50">
+                        <img src="/img/carrusel/imagen22.jpg" alt="Imagen 2" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
                             <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="margin-left: 20px; /* Espaciado por defecto */
-                               margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                                <h1 class="text-white font-bold"
-                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                   font-family:   'Lucida Bright', Georgia, serif;
-                                   background: #000823; 
-                                   border-radius: 20px; 
-                                   padding: 12px 20px;">
-                                    GRUPO EMANUEL RLG
-                                </h1>
+                                style="
+                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
+                                    max-width: 60%; /* Ancho máximo del contenedor */
+                                ">
+                                <h4 class="text-white font-bold"
+                                style="
+                                    font-size: 2.5vw; /* Tamaño dinámico responsivo */
+                                    font-family: 'Montserrat', sans-serif;
+                                    border-radius: 20px; 
+                                    padding: 12px 20px;
+                                     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra para las letras */
+                                    font-weight: bold;
+                                    max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    text-align: left; 
+                                ">
+                                CONSTRUIMOS TUS SUEÑOS CON LOS MEJORES MATERIALES DEL MERCADO, SIEMPRE A TU ALCANCE
+                                </h4>
+                                <div style="margin-left: 20%" >
+                                   <a href="{{ route('serv_ferreteria') }}"
+                                    class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
+                                    transform sm:scale-100 scale-90">
+                                Ver más
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Imagen 3 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen33.jpg" alt="Imagen 3"
-                            class="object-cover w-full h-full brightness-50">
+                        <img src="/img/carrusel/imagen33.jpg" alt="Imagen 3" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
+
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
                             <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="margin-left: 20px; /* Espaciado por defecto */
-                               margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                                <h1 class="text-white font-bold"
-                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                    font-family:   'Lucida Bright', Georgia, serif;
-                                   background: #000823; 
-                                   border-radius: 20px; 
-                                   padding: 12px 20px;">
-                                    GRUPO EMANUEL RLG
-                                </h1>
+                                style="
+                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
+                                    max-width: 60%; /* Ancho máximo del contenedor */
+                                ">
+                                <h4 class="text-white font-bold"
+                                    style="
+                                    font-size: 2.5vw; /* Tamaño dinámico responsivo */
+                                    font-family: 'Montserrat', sans-serif;
+                                    border-radius: 20px; 
+                                    padding: 12px 20px;
+                                    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra para las letras */
+                                    font-weight: bold;
+                                    max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    text-align: left; 
+                                ">
+                                VIVE LA PASIÓN POR EL DEPORTE EN NUESTRO COMPLEJO DEPORTIVO, DISEÑADO PARA CAMPEONES
+                                </h4>
+                                <div style="margin-left: 20%" >
+                                    <a href="{{ route('serv_complejo') }}"
+                                     class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
+                                     transform sm:scale-100 scale-90">
+                                 Ver más
+                                     </a>
+                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Imagen 4 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen44.jpg" alt="Imagen 4"
-                            class="object-cover w-full h-full brightness-50">
+                        <img src="/img/carrusel/imagen44.jpg" alt="Imagen 4" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.7);">
+        
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
                             <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="margin-left: 20px; /* Espaciado por defecto */
-                               margin-left: 60px; /* Espaciado en pantallas más grandes */">
-                                <h1 class="text-white font-bold"
-                                    style="font-size: 3vw; /* Tamaño dinámico responsivo */
-                                     font-family:   'Lucida Bright', Georgia, serif;
-                                   background: #000823; 
-                                   border-radius: 20px; 
-                                   padding: 12px 20px;">
-                                    GRUPO EMANUEL RLG
-                                </h1>
+                                style="
+                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
+                                    max-width: 60%; /* Ancho máximo del contenedor */
+                                ">
+                                <h4 class="text-white font-bold"
+                                style="
+                                    font-size: 2.5vw; /* Tamaño dinámico responsivo */
+                                    font-family: 'Montserrat', sans-serif;
+                                    border-radius: 20px; 
+                                    padding: 12px 20px;
+                                    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra para las letras */
+                                    font-weight: bold;
+                                    max-width: 90%; /* Asegura que no se desborde en pantallas pequeñas */
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    text-align: left; 
+                                ">
+                                    MATERIALES DE CALIDAD PARA TUS PROYECTOS, ENTREGADOS CON CONFIANZA Y PUNTUALIDAD
+                                </h4>
+                                <div style="margin-left: 20%" >
+                                    <a href="{{ route('serv_servicentro') }}"
+                                     class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
+                                     transform sm:scale-100 scale-90">
+                                 Ver más
+                                     </a>
+                                 </div>
                             </div>
                         </div>
                     </div>
@@ -249,7 +310,7 @@
         };
 
         // Avance automático cada 4 segundos
-        setInterval(nextSlide, 3000);
+        setInterval(nextSlide, 6000);
 
         nextButton.addEventListener('click', () => {
             nextSlide();
