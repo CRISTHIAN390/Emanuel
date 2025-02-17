@@ -36,7 +36,7 @@ class RutasController extends Controller
     
         //Enviar el correo usando el Mailable
         //Configurar correo destinatatio de la empresa  ,   opcional :to(env('MAIL_TO_ADDRESS'))
-        Mail::to('xcrissx12345@gmail.com')->send(new ConsultaMail($details));
+        Mail::to('administracion@grupoemanuelrlg.com')->send(new ConsultaMail($details));
 
         // Redireccionar a la vista con mensaje de éxito
         return redirect()->route('serv_consulta')->with('success', 'El mensaje ha sido enviado con éxito.');
