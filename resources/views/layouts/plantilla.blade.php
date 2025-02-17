@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 </head>
 
 <style>
@@ -322,7 +324,42 @@
             });
         });
     </script>
-
+    <!-- Script para mostrar el toast de bienvenida al iniciar la sesión -->
+    <script>
+        // Función para mostrar el toast de bienvenida
+        function showWelcomeToast() {
+        if (!sessionStorage.getItem('hasVisited')) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 5000,
+                background: '#FFFFFF', // Color de fondo
+                color: '#000000',
+                iconColor: '#0ed145',
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.onmouseenter = Swal.stopTimer;
+                    toast.onmouseleave = Swal.resumeTimer;
+                },
+            });
+    
+            Toast.fire({
+                icon: 'success',
+                title: '¡Bienvenido a Grupo Emanuel! Nos alegra tenerte con nosotros. 👋😃',
+                customClass: {
+                    popup: 'animate__animated animate__slideInRight', // Clases de Animate.css
+                },
+            });
+    
+            // Marcar al usuario como que ya ha visitado durante la sesión actual
+            sessionStorage.setItem('hasVisited', 'true');
+        }
+        }
+    
+        // Llamada a la función al cargar la página
+        document.addEventListener('DOMContentLoaded', showWelcomeToast);
+    </script>
 
 </body>
 
