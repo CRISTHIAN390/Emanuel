@@ -155,7 +155,6 @@
         </div>
 
         <!-- Contenido de informacion de la empresa -->
-
         <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
             <div class="bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-stretch text-center md:text-left p-6 hover:shadow-xl transition-shadow duration-500">
                 
@@ -164,7 +163,7 @@
                     <img 
                         src="/img/carrusel/equipo.jpg" 
                         alt="Equipo de Grupo Emanuel" 
-                        class="w-full h-48 md:h-56 object-cover rounded-lg shadow-md"
+                        class="w-full h-56 object-cover rounded-lg shadow-md"
                     >
                 </div>
 
@@ -211,74 +210,58 @@
             </div>
         </div>
 
-        <div class="w-full  text-white py-8"
-            style="background-image: url('/img/Publicidad/contacto.jpg'); background-size: cover; background-position: center;">
+        <!-- Contenido sobre los servicios -->
+        <div class="w-full text-white py-12 bg-cover bg-center" style="background-image: url('/img/Publicidad/contacto.jpg');">
             <div class="container mx-auto px-4">
-                <div style="text-align: center;">
-                    <h2 class="text-3xl font-bold mb-6 animate__animated animate__fadeInDown"
-                        style="display: inline-block; background: #ffffff; padding: 0.5rem 1.5rem; color: #000823; 
-                               border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); border: 2px solid #ececec;">
+                <!-- Título -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold inline-block bg-white text-gray-900 px-6 py-2 rounded-lg shadow-lg border-2 border-gray-200">
                         NUESTROS SERVICIOS
                     </h2>
                 </div>
-                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 p-8">
 
+                <!-- Grid de tarjetas -->
+                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 px-4">
                     <!-- Tarjeta 1 -->
-                    <div
-                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
-                        <img src="/img/servicios/hotel.jpg" alt="Hotel"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
-                        <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Hotel</h3>
-                            <a href="{{ route('serv_hotel') }}"
-                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                    <div class="relative group overflow-hidden border-4 border-yellow-500  rounded-lg shadow-lg w-64 h-64 mx-auto transform transition-transform duration-300 hover:scale-105">
+                        <img src="/img/servicios/hotel.jpg" alt="Hotel" 
+                        class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Hotel</h3>
+                            <a href="{{ route('serv_hotel') }}" class="bg-yellow-500 text-black font-semibold py-2 px-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
-
                     <!-- Tarjeta 2 -->
-                    <div
-                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
-                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
-                        <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Complejo deportivo</h3>
-                            <a href="{{ route('serv_complejo') }}"
-                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                    <div class="relative group overflow-hidden border-4 border-yellow-500  rounded-lg shadow-lg w-64 h-64 mx-auto transform transition-transform duration-300 hover:scale-105">
+                        <img src="/img/servicios/tripleg.jpg" alt="Complejo deportivo" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Complejo deportivo</h3>
+                            <a href="{{ route('serv_complejo') }}" class="bg-yellow-500 text-black font-semibold py-2 px-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
                     <!-- Tarjeta 3 -->
-                    <div
-                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
-                        <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
-                        <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2 text-center">ProFerretería</h3>
-                            <a href="{{ route('serv_ferreteria') }}"
-                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                    <div class="relative group overflow-hidden border-4 border-yellow-500  rounded-lg shadow-lg w-64 h-64 mx-auto transform transition-transform duration-300 hover:scale-105">
+                        <img src="/img/servicios/ferreteria.jpg" alt="Distribuidora Ferreteria" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">ProFerretería</h3>
+                            <a href="{{ route('serv_ferreteria') }}" class="bg-yellow-500 text-black font-semibold py-2 px-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Ver más
                             </a>
                         </div>
                     </div>
 
                     <!-- Tarjeta 4 -->
-                    <div
-                        class="relative group border-4 border-yellow-500 rounded-lg overflow-hidden animate__animated animate__zoomIn w-64 h-64 mx-auto">
-                        <img src="/img/servicios/servicentro1.jpg" alt="Servicentro"
-                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 group-hover:brightness-50">
-                        <div
-                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <h3 class="font-bold text-lg uppercase mb-2 text-center">Servicentro</h3>
-                            <a href="{{ route('serv_servicentro') }}"
-                                class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block">
+                    <div class="relative group overflow-hidden border-4 border-yellow-500  rounded-lg shadow-lg w-64 h-64 mx-auto transform transition-transform duration-300 hover:scale-105">
+                        <img src="/img/servicios/servicentro1.jpg" alt="Servicentro" class="w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-75">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 group-hover:bg-opacity-80 transition-opacity duration-300">
+                            <h3 class="font-bold text-lg uppercase mb-2 text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Servicentro</h3>
+                            <a href="{{ route('serv_servicentro') }}" class="bg-yellow-500 text-black font-semibold py-2 px-6 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Ver más
                             </a>
                         </div>
