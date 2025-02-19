@@ -155,25 +155,32 @@
         </div>
 
         <!-- Contenido de informacion de la empresa -->
-        <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
-            <div
-                class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-center text-center md:text-left p-6 hover:shadow-xl transition-shadow 
-             duration-500">
 
+        <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
+            <div class="bg-white border border-gray-200 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-stretch text-center md:text-left p-6 hover:shadow-xl transition-shadow duration-500">
+                
                 <!-- Imagen -->
-                <div class="w-full md:w-1/2 lg:w-4/12 mb-4 md:mb-0 p-8 flex justify-center md:justify-start">
-                    <img src="/img/carrusel/equipo.jpg" alt="Servicentro"
-                        class="w-full h-[250px] object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none shadow-xl">
+                <div class="w-full md:w-1/2 lg:w-4/12 flex justify-center items-center p-4">
+                    <img 
+                        src="/img/carrusel/equipo.jpg" 
+                        alt="Equipo de Grupo Emanuel" 
+                        class="w-full h-48 md:h-56 object-cover rounded-lg shadow-md"
+                    >
                 </div>
 
-
                 <!-- Texto de descripción -->
-                <div class="w-full md:w-1/2 lg:w-9/12 p-6 flex flex-col justify-center">
+                <div class="w-full md:w-1/2 lg:w-8/12 p-4 flex flex-col justify-center">
                     <!-- Logo -->
-                    <div class="flex items-center logo mb-4">
-                        <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
+                    <div class="flex justify-center md:justify-start mb-6">
+                        <img 
+                            src="/img/logo.png" 
+                            alt="Logo de Grupo Emanuel" 
+                            class="h-12 md:h-16"
+                        >
                     </div>
-                    <p class="text-gray-700 mb-6 leading-relaxed text-justify">
+
+                    <!-- Descripción -->
+                    <p class="text-gray-700 mb-6 leading-relaxed text-justify text-sm md:text-base">
                         En Grupo Emanuel RLG, nos dedicamos a brindar servicios generales
                         con un firme compromiso de excelencia. Somos un equipo de profesionales
                         con más de 17 años de sólida experiencia en el sector, impulsados por la
@@ -181,23 +188,23 @@
                         en agentes de cambio.
                     </p>
 
-                    <div style="background: #f8c740;color: #001c77;"
-                        class="rounded-2xl text-gray-800 py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0">
+                    <!-- Estadísticas -->
+                    <div class="bg-[#f8c740] text-[#001c77] rounded-lg py-4 px-2 flex flex-col md:flex-row justify-around space-y-4 md:space-y-0" style="background: #f8c740;color: #001c77;">
                         <div class="flex flex-col items-center animate__animated animate__pulse">
-                            <span class="text-3xl font-bold">+17</span>
-                            <span class="text-sm">Años de experiencia</span>
+                            <span class="text-2xl font-bold">+17</span>
+                            <span class="text-xs md:text-sm">Años de experiencia</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+350</span>
-                            <span class="text-sm">Clientes Satisfechos</span>
+                            <span class="text-2xl font-bold">+350</span>
+                            <span class="text-xs md:text-sm">Clientes Satisfechos</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+400</span>
-                            <span class="text-sm">Proyectos ejecutados</span>
+                            <span class="text-2xl font-bold">+400</span>
+                            <span class="text-xs md:text-sm">Proyectos ejecutados</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <span class="text-3xl font-bold">+15</span>
-                            <span class="text-sm">Profesionales Calificados</span>
+                            <span class="text-2xl font-bold">+15</span>
+                            <span class="text-xs md:text-sm">Profesionales Calificados</span>
                         </div>
                     </div>
                 </div>
