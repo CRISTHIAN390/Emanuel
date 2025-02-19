@@ -34,7 +34,7 @@
                                 </h4>
                                 <div style="margin-left: 25%">
                                     <a href="{{ route('serv_hotel') }}"
-                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        class="bg-yellow-500 text-gray-800 font-semibold py-2 px-3 rounded inline-block hover:bg-black hover:text-white transition-all duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
                                         Ver más
                                     </a>
                                 </div>
@@ -66,7 +66,7 @@
                                 </h4>
                                 <div style="margin-left: 25%">
                                     <a href="{{ route('serv_ferreteria') }}"
-                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        class="bg-yellow-500 text-gray-800 font-semibold py-2 px-3 rounded inline-block hover:bg-black hover:text-white transition-all duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
                                         Ver más
                                     </a>
                                 </div>
@@ -98,7 +98,7 @@
                                 </h4>
                                 <div style="margin-left: 25%">
                                     <a href="{{ route('serv_complejo') }}"
-                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        class="bg-yellow-500 text-gray-800 font-semibold py-2 px-3 rounded inline-block hover:bg-black hover:text-white transition-all duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
                                         Ver más
                                     </a>
                                 </div>
@@ -135,7 +135,7 @@
                                 </h4>
                                 <div style="margin-left: 25%">
                                     <a href="{{ route('serv_servicentro') }}"
-                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        class="bg-yellow-500 text-gray-800 font-semibold py-2 px-3 rounded inline-block hover:bg-black hover:text-white transition-all duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
                                         Ver más
                                     </a>
                                 </div>

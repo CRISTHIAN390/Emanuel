@@ -16,32 +16,74 @@
 </head>
 
 <style>
-    .nav-item:hover,
-    .nav-item.active {
-        background-color: #FBBF24;
-        color: white border: 2px solid #FBBF24;
-        transition: all 0.3s ease;
-        letter-spacing: 1px;
-        letter-spacing: 0.5px;
-        font-weight: bold;
-    }
-
     .nav-item {
-        padding: 2px 15px;
-        margin-top: 10px;
-        margin-bottom: 24px;
+        padding: 8px 20px;
+        margin: 8px 0;
         border: 2px solid transparent;
-        border-radius: 5px;
+        border-radius: 8px;
         transition: all 0.3s ease;
         color: #4a5568;
         text-align: center;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+        background-color: #FBBF24;
+        color: #1a202c;
+        border-color: #FBBF24;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .submenu a {
+        display: block;
+        padding: 10px 20px;
+        color: #353d4a;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .submenu a:hover {
+        background-color: #f3f4f6;
+    }
+
+    .relative:hover .submenu {
+        display: block;
+    }
+
+    #mobile-menu {
+        background-color: #1a202c;
+    }
+
+    #mobile-menu a,
+    #mobile-menu button {
+        color: white;
+    }
+
+    #mobile-menu a:hover,
+    #mobile-menu button:hover {
+        background-color: #FBBF24;
+        color: #1a202c;
     }
 </style>
 
 <body class="bg-white">
 
     <!-- Encabezado -->
-    <header class="bg-white shadow-md fixed top-0 w-full z-20 top-border">
+    <header class="bg-white shadow-lg fixed top-0 w-full z-20 top-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
             <!-- Logo -->
             <a href="{{ route('home') }}">
@@ -49,36 +91,28 @@
                     <img src="/img/logo.png" alt="Grupo Emanuel" class="h-15">
                 </div>
             </a>
+
             <!-- Menú para pantallas grandes -->
             <nav class="hidden md:flex space-x-4 items-center">
-                <a href="{{ route('home') }}"
-                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Inicio</a>
+                <a href="{{ route('home') }}" class="nav-item">Inicio</a>
                 <div class="relative nav-item">
-                    <a href="#"
-                        class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Nosotros</span>
-                        <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
-                    </a>
+                    <a href="#" class="nav-item"><span>Nosotros</span> <span class="text-gray-600">▿</span></a>
                     <div class="submenu">
                         <a href="{{ route('cat_rutaEq') }}">Nuestro Equipo</a>
-                        <a href="{{ route('cat_rutaVis') }}">Mision,Vision y valores</a>
+                        <a href="{{ route('cat_rutaVis') }}">Misión, Visión y Valores</a>
                         <a href="{{ route('cat_rutarsc') }}">Responsabilidad Social Corporativa</a>
                     </div>
                 </div>
                 <div class="relative nav-item">
-                    <a href="#"
-                        class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200"><span>Servicios</span>
-                        <span class="text-gray-600">▿</span> <!-- Ícono de flecha hacia abajo -->
-                    </a>
+                    <a href="#" class="nav-item"><span>Servicios</span> <span class="text-gray-600">▿</span></a>
                     <div class="submenu">
                         <a href="{{ route('serv_hotel') }}">Hotel</a>
-                        <a href="{{ route('serv_complejo') }}">Complejo deportivo</a>
+                        <a href="{{ route('serv_complejo') }}">Complejo Deportivo</a>
                         <a href="{{ route('serv_ferreteria') }}">ProFerretería</a>
                         <a href="{{ route('serv_servicentro') }}">Servicentro</a>
                     </div>
                 </div>
-
-                <a href="{{ route('serv_consulta') }}"
-                    class="nav-item py-4 px-6 bg-transparent text-gray-800 font-semibold rounded-lg hover:bg-yellow-400 hover:text-gray-900 transition duration-200">Contacto</a>
+                <a href="{{ route('serv_consulta') }}" class="nav-item">Contacto</a>
             </nav>
 
             <!-- Botón de menú móvil -->
@@ -88,76 +122,51 @@
         </div>
 
         <!-- Menú lateral para pantallas pequeñas -->
-        <div id="mobile-menu"
-            class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
-            <div class="flex justify-between items-center p-4 bg-gray-700 text-white border-b border-gray-500">
+        <div id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 ease-in-out z-30">
+            <div class="flex justify-between items-center p-4 bg-gray-700">
                 <span class="text-lg font-semibold">Menú</span>
-                <button id="close-menu-button"
-                    class="text-white focus:outline-none hover:text-yellow-400 transition-colors duration-200">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
+                <button id="close-menu-button" class="text-white focus:outline-none hover:text-yellow-400">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <nav class="mt-4">
-
-
                 <a href="{{ route('home') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Inicio</a>
-                <hr class="border-t border-gray-50 ">
+                <hr class="border-t border-gray-600">
 
-                <!-- Menú desplegable para Servicios -->
+                <!-- Menú desplegable para Nosotros -->
                 <div class="relative">
-                    <button id="services-toggle"
-                        class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
-                        Nosotros <span class="inline-block transform transition-transform duration-300"
-                            id="arrow">▿</span>
+                    <button id="services-toggle" class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
+                        Nosotros <span id="arrow">▿</span>
                     </button>
-                    <!-- Opciones desplegables de Nosotros -->
                     <div id="services-submenu" class="hidden pl-6">
-                        <a href="{{ route('cat_rutaEq') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
-                        <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('cat_rutaVis') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Mision,Vision</a>
-                        <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('cat_rutarsc') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad
-                            Social Corporativa </a>
-
+                        <a href="{{ route('cat_rutaEq') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Equipo</a>
+                        <a href="{{ route('cat_rutaVis') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Misión, Visión</a>
+                        <a href="{{ route('cat_rutarsc') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Responsabilidad Social</a>
                     </div>
                 </div>
-                <hr class="border-t border-gray-50 ">
+                <hr class="border-t border-gray-600">
+
                 <!-- Menú desplegable para Servicios -->
                 <div class="relative">
-                    <button id="services-toggle2"
-                        class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
-                        Servicios <span class="inline-block transform transition-transform duration-300"
-                            id="arrow2">▿</span>
+                    <button id="services-toggle2" class="block w-full text-left px-4 py-2 hover:bg-yellow-400 hover:text-black focus:outline-none">
+                        Servicios <span id="arrow2">▿</span>
                     </button>
-                    <!-- Opciones desplegables de Servicios -->
                     <div id="services-submenu2" class="hidden pl-6">
-                        <a href="{{ route('serv_hotel') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
-                        <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_complejo') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Complejo deportivo</a>
-                        <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_ferreteria') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Ferreteria</a>
-                        <hr class="border-t border-gray-50 ">
-                        <a href="{{ route('serv_servicentro') }}"
-                            class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicentro</a>
+                        <a href="{{ route('serv_hotel') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Hotel</a>
+                        <a href="{{ route('serv_complejo') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Complejo Deportivo</a>
+                        <a href="{{ route('serv_ferreteria') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Ferretería</a>
+                        <a href="{{ route('serv_servicentro') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Servicentro</a>
                     </div>
                 </div>
-                <hr class="border-t border-gray-50 ">
-                <a href="{{ route('serv_consulta') }}"
-                    class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
-                <hr class="border-t border-gray-50 ">
+                <hr class="border-t border-gray-600">
+
+                <a href="{{ route('serv_consulta') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
             </nav>
         </div>
-    </header><br><br><br>
+    </header>
+    <br><br><br>
     <!-- Script para mostrar y ocultar el submenú -->
     <script>
         document.getElementById('services-toggle').addEventListener('click', function(event) {
