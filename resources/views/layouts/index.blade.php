@@ -4,20 +4,20 @@
     <div class="relative mt-4 bg-white">
         <!-- Carrusel -->
         <div
-            class="relative border-b-4 border-[#ffd900d4] w-full h-[500px] sm:h-[600px] lg:h-[700px] animate__animated animate__fadeIn">
+            class="relative border-b-4 border-[#ffd900d4]  w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] animate__animated animate__fadeIn">
             <div class="overflow-hidden border-b-4 h-full w-full relative">
                 <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
                     <!-- Imagen 1 -->
                     <div class="flex-none w-full h-full relative">
                         <!-- Imagen con oscurecimiento sutil -->
                         <div class="absolute inset-0 bg-black/30"></div>
-                        <img src="/img/carrusel/imagen11.jpg" alt="Imagen 1" class="object-cover w-full h-full"  style="filter: brightness(0.8);">                        <!-- Contenido de texto -->
+                        <img src="/img/carrusel/imagen11.jpg" alt="Imagen 1" class="object-cover w-full h-full"
+                            style="filter: brightness(0.8);">
+                        <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
-                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[60%]" style="
-                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
-                                    max-width: 60%; /* Ancho máximo del contenedor */
-                                ">
-                                <h4 class="text-white font-bold" style="
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[90%] md:max-w-[60%]"
+                                style="margin-right: 20%;margin-left: 5%;">
+                                <h4 class="text-white font-bold  " style="
                                 font-size: 2.5vw; /* Tamaño dinámico responsivo */
                                 font-family: 'Montserrat', sans-serif;
                                 border-radius: 20px; 
@@ -28,34 +28,29 @@
                                 margin-left: auto;
                                 margin-right: auto;
                                 text-align: left; 
-                            ">
+                                ">
                                     DESCANSA Y RELÁJATE EN NUESTRO HOTEL, DONDE CADA DETALLE ESTÁ PENSADO PARA TU
                                     COMODIDAD
                                 </h4>
-                                <div style="margin-left: 20%" >
-                                    <a href="{{ route('serv_hotel') }}" 
-                                    class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
-                                    transform sm:scale-100 scale-90">
-                                Ver más
+                                <div style="margin-left: 25%">
+                                    <a href="{{ route('serv_hotel') }}"
+                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        Ver más
                                     </a>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
 
                     <!-- Imagen 2 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen22.jpg" alt="Imagen 2" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
+                        <img src="/img/carrusel/imagen22.jpg" alt="Imagen 2"
+                            class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
-                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="
-                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
-                                    max-width: 60%; /* Ancho máximo del contenedor */
-                                ">
-                                <h4 class="text-white font-bold"
-                                style="
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[90%] md:max-w-[60%]"
+                                style="margin-right: 20%;margin-left: 5%;">
+                                <h4 class="text-white font-bold" style="
                                     font-size: 2.5vw; /* Tamaño dinámico responsivo */
                                     font-family: 'Montserrat', sans-serif;
                                     border-radius: 20px; 
@@ -67,13 +62,12 @@
                                     margin-right: auto;
                                     text-align: left; 
                                 ">
-                                CONSTRUIMOS TUS SUEÑOS CON LOS MEJORES MATERIALES DEL MERCADO, SIEMPRE A TU ALCANCE
+                                    CONSTRUIMOS TUS SUEÑOS CON LOS MEJORES MATERIALES DEL MERCADO, SIEMPRE A TU ALCANCE
                                 </h4>
-                                <div style="margin-left: 20%" >
-                                   <a href="{{ route('serv_ferreteria') }}"
-                                    class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
-                                    transform sm:scale-100 scale-90">
-                                Ver más
+                                <div style="margin-left: 25%">
+                                    <a href="{{ route('serv_ferreteria') }}"
+                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        Ver más
                                     </a>
                                 </div>
                             </div>
@@ -81,17 +75,14 @@
                     </div>
                     <!-- Imagen 3 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen33.jpg" alt="Imagen 3" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
+                        <img src="/img/carrusel/imagen33.jpg" alt="Imagen 3"
+                            class="object-cover w-full h-full brightness-50" style="filter: brightness(0.8);">
 
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
-                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="
-                                    margin-left: 40px; /* Espaciado desde el lado izquierdo */
-                                    max-width: 60%; /* Ancho máximo del contenedor */
-                                ">
-                                <h4 class="text-white font-bold"
-                                    style="
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[90%] md:max-w-[60%]"
+                                style="margin-right: 20%;margin-left: 5%;">
+                                <h4 class="text-white font-bold" style="
                                     font-size: 2.5vw; /* Tamaño dinámico responsivo */
                                     font-family: 'Montserrat', sans-serif;
                                     border-radius: 20px; 
@@ -103,31 +94,32 @@
                                     margin-right: auto;
                                     text-align: left; 
                                 ">
-                                VIVE LA PASIÓN POR EL DEPORTE EN NUESTRO COMPLEJO DEPORTIVO, DISEÑADO PARA CAMPEONES
+                                    VIVE LA PASIÓN POR EL DEPORTE EN NUESTRO COMPLEJO DEPORTIVO, DISEÑADO PARA CAMPEONES
                                 </h4>
-                                <div style="margin-left: 20%" >
+                                <div style="margin-left: 25%">
                                     <a href="{{ route('serv_complejo') }}"
-                                     class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
-                                     transform sm:scale-100 scale-90">
-                                 Ver más
-                                     </a>
-                                 </div>
+                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        Ver más
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Imagen 4 -->
                     <div class="flex-none w-full h-full relative">
-                        <img src="/img/carrusel/imagen44.jpg" alt="Imagen 4" class="object-cover w-full h-full brightness-50" style="filter: brightness(0.7);">
-        
+                        <img src="/img/carrusel/imagen44.jpg" alt="Imagen 4"
+                            class="object-cover w-full h-full brightness-50" style="filter: brightness(0.7);">
+
                         <!-- Contenido de texto -->
                         <div class="absolute inset-0 flex items-center justify-start">
-                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10"
-                                style="
+                            <div class="bg-white/20 backdrop-blur-md rounded-full p-4 md:p-6 lg:p-10 max-w-[90%] md:max-w-[60%]"
+                                style="margin-right: 20%;margin-left: 5%;">
+
+                                <!--rounded-full p-4 md:p-6 lg:p-10" style="
                                     margin-left: 40px; /* Espaciado desde el lado izquierdo */
                                     max-width: 60%; /* Ancho máximo del contenedor */
-                                ">
-                                <h4 class="text-white font-bold"
-                                style="
+                                "  -->
+                                <h4 class="text-white font-bold" style="
                                     font-size: 2.5vw; /* Tamaño dinámico responsivo */
                                     font-family: 'Montserrat', sans-serif;
                                     border-radius: 20px; 
@@ -141,32 +133,28 @@
                                 ">
                                     MATERIALES DE CALIDAD PARA TUS PROYECTOS, ENTREGADOS CON CONFIANZA Y PUNTUALIDAD
                                 </h4>
-                                <div style="margin-left: 20%" >
+                                <div style="margin-left: 25%">
                                     <a href="{{ route('serv_servicentro') }}"
-                                     class="bg-yellow-500 text-black font-semibold py-1.5 px-4 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-sm 
-                                     transform sm:scale-100 scale-90">
-                                 Ver más
-                                     </a>
-                                 </div>
+                                        class="bg-yellow-500 text-black font-semibold py-1 px-3 rounded inline-block hover:bg-black hover:text-white transition duration-300 text-xs md:text-sm lg:text-xl transform scale-90 sm:scale-100">
+                                        Ver más
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <button id="prev"
-                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-2 md:p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
                 ❮
             </button>
             <button id="next"
-                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-30 text-black p-2 md:p-4 rounded-full shadow-lg border border-gray-300 z-10 transition duration-300 ease-in-out hover:scale-110">
                 ❯
             </button>
         </div>
 
-
-
-
-        <!-- Contenido -->
+        <!-- Contenido de informacion de la empresa -->
         <div class="container mx-auto max-w-6xl px-4 py-8 animate__animated animate__fadeInUp">
             <div
                 class="bg-white border border-gray-300 shadow-lg rounded-2xl overflow-hidden flex flex-col md:flex-row items-center md:items-center text-center md:text-left p-6 hover:shadow-xl transition-shadow 
