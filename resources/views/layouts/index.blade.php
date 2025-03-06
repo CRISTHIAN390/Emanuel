@@ -221,7 +221,7 @@
                 </div>
 
                 <!-- Grid de tarjetas -->
-                <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 px-4">
+                <div class="grid gap-8 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 px-4">
                     <!-- Tarjeta 1 -->
                     <div class="relative group overflow-hidden border-4 border-yellow-500  rounded-lg shadow-lg w-64 h-64 mx-auto transform transition-transform duration-300 hover:scale-105">
                         <img src="/img/servicios/hotel.jpg" alt="Hotel" 
