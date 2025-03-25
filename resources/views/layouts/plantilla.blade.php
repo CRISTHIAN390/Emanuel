@@ -112,6 +112,7 @@
                         <a href="{{ route('serv_servicentro') }}">Servicentro</a>
                     </div>
                 </div>
+                <a href="https://paglumin.onrender.com/home/envivo" class="nav-item"> <i class="fas fa-headphones"></i> Radio Emanuel</a>
                 <a href="{{ route('serv_consulta') }}" class="nav-item">Contacto</a>
             </nav>
 
@@ -161,8 +162,11 @@
                     </div>
                 </div>
                 <hr class="border-t border-gray-600">
-
+                
+                <a href="https://paglumin.onrender.com/home/envivo" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black"> <i class="fas fa-headphones"></i> Radio Emanuel</a>
+                <hr class="border-t border-gray-600">
                 <a href="{{ route('serv_consulta') }}" class="block px-4 py-2 hover:bg-yellow-400 hover:text-black">Contacto</a>
+
             </nav>
         </div>
     </header>
