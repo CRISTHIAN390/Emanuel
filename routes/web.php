@@ -17,6 +17,8 @@ Route::get('/emanuel/complejo', [RutasController::class,'ComplejoDeportivo'])->n
 Route::get('/emanuel/proferreteria', [RutasController::class,'Ferreteria'])->name('serv_ferreteria');
 Route::get('/emanuel/servicentro', [RutasController::class,'Servicentro'])->name('serv_servicentro');
 
+Route::get('/emanuel/radio/vivo', [RutasController::class,'Emisoravivo'])->name('serv_emisora');
+
 //Para Envio de mensajes
 
 // Ruta para mostrar el formulario de contacto

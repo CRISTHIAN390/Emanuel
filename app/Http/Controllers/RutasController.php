@@ -72,4 +72,10 @@ class RutasController extends Controller
     public function Servicentro() {
         return view("Servicios.servicentro");
     }
+
+
+
+    public function Emisoravivo() { 
+        return view("Servicios.emisora");
+    }
 }
