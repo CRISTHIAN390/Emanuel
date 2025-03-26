@@ -54,8 +54,8 @@
                         Tu navegador no soporta el audio en streaming.
                     </audio>
                     
-                    <!-- Indicador de carga -->
-                    <div id="loadingIndicator" class="mt-2 text-blue-600 flex items-center justify-center sm:justify-start gap-2">
+                    <!-- Indicador de carga (Oculto desde el inicio) -->
+                    <div id="loadingIndicator" class="invisible mt-2 text-blue-600 flex items-center justify-center sm:justify-start gap-2">
                         <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -70,71 +70,70 @@
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-let audio = document.getElementById('radioStream');
-let playButton = document.getElementById('playButton');
-let playIcon = document.getElementById('playIcon');
-let pauseIcon = document.getElementById('pauseIcon');
-let buttonText = document.getElementById('buttonText');
-let loadingIndicator = document.getElementById('loadingIndicator');
-
-let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
-let isPlaying = false;
-
-// Eventos del audio
-audio.addEventListener('play', () => {
-    isPlaying = true;
-    updateButtonState();
-});
-
-audio.addEventListener('pause', () => {
-    isPlaying = false;
-    updateButtonState();
-});
-
-audio.addEventListener('waiting', () => {
-    loadingIndicator.classList.remove('hidden');
-});
-
-audio.addEventListener('canplay', () => {
-    loadingIndicator.classList.add('hidden');
-});
-
-audio.addEventListener('error', () => {
-    loadingIndicator.classList.add('hidden');
-    swal("Error", "No se pudo conectar con la emisora. Inténtelo más tarde.", "error");
-});
-
-// Función para alternar reproducción
-function toggleAudio() {
-    if (!audio.src) {
-        audio.src = streamUrl;
-        audio.load();
+    let audio = document.getElementById('radioStream');
+    let playButton = document.getElementById('playButton');
+    let playIcon = document.getElementById('playIcon');
+    let pauseIcon = document.getElementById('pauseIcon');
+    let buttonText = document.getElementById('buttonText');
+    
+    let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
+    let isPlaying = false;
+    
+    // Eventos del audio
+    audio.addEventListener('play', () => {
+        isPlaying = true;
+        updateButtonState();
+    });
+    
+    audio.addEventListener('pause', () => {
+        isPlaying = false;
+        updateButtonState();
+    });
+    
+    audio.addEventListener('waiting', () => {
+        console.log("Cargando transmisión...");
+    });
+    
+    audio.addEventListener('canplay', () => {
+        console.log("Transmisión lista para reproducirse.");
+    });
+    
+    audio.addEventListener('error', () => {
+        console.error("No se pudo conectar con la emisora. Inténtelo más tarde.");
+        swal("Error", "No se pudo conectar con la emisora. Inténtelo más tarde.", "error");
+    });
+    
+    // Función para alternar reproducción
+    function toggleAudio() {
+        if (!audio.src) {
+            audio.src = streamUrl;
+            audio.load();
+        }
+    
+        if (audio.paused) {
+            audio.play().catch(error => {
+                swal("Error", "No se pudo reproducir la emisora. Verifique su conexión.", "error");
+            });
+        } else {
+            audio.pause();
+        }
     }
-
-    if (audio.paused) {
-        audio.play().catch(error => {
-            swal("Error", "No se pudo reproducir la emisora. Verifique su conexión.", "error");
-        });
-    } else {
-        audio.pause();
+    
+    // Función para actualizar el botón
+    function updateButtonState() {
+        if (isPlaying) {
+            playButton.classList.replace("bg-blue-600", "bg-red-600");
+            playButton.classList.replace("hover:bg-blue-700", "hover:bg-red-700");
+            buttonText.innerText = "Detener";
+            playIcon.classList.add("hidden");
+            pauseIcon.classList.remove("hidden");
+        } else {
+            playButton.classList.replace("bg-red-600", "bg-blue-600");
+            playButton.classList.replace("hover:bg-red-700", "hover:bg-blue-700");
+            buttonText.innerText = "Escuchar en vivo";
+            playIcon.classList.remove("hidden");
+            pauseIcon.classList.add("hidden");
+        }
     }
-}
-
-// Función para actualizar el botón
-function updateButtonState() {
-    if (isPlaying) {
-        playButton.classList.replace("bg-blue-600", "bg-red-600");
-        playButton.classList.replace("hover:bg-blue-700", "hover:bg-red-700");
-        buttonText.innerText = "Detener";
-        playIcon.classList.add("hidden");
-        pauseIcon.classList.remove("hidden");
-    } else {
-        playButton.classList.replace("bg-red-600", "bg-blue-600");
-        playButton.classList.replace("hover:bg-red-700", "hover:bg-blue-700");
-        buttonText.innerText = "Escuchar en vivo";
-        playIcon.classList.remove("hidden");
-        pauseIcon.classList.add("hidden");
-    }
-}
-</script>
+    </script>
 @endsection
