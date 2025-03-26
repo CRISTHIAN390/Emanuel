@@ -80,7 +80,7 @@
     // IMPORTANTE: Aquí debes colocar la URL de tu stream de audio
     // Puedes usar una URL directa o la codificación Base64 como en el ejemplo original
     // Ejemplo con URL directa:
-    let streamUrl = "https://tudominio.com/tustream.mp3";
+    let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
     
     // Ejemplo con Base64 (descomenta la siguiente línea si prefieres usar Base64)
     // let streamUrl = atob("aHR0cHM6Ly9zMTQubXlyYWRpb3N0cmVhbS5jb20vMzE1OTIvbGlzdGVuLm1wMw==");
