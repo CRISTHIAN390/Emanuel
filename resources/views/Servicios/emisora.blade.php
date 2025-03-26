@@ -6,7 +6,7 @@
         <!-- Encabezado -->
         <div class="text-center bg-white shadow-md rounded-lg py-5 mb-8">
             <h5 class="text-2xl sm:text-3xl font-bold text-gray-800" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                Emisora - en vivo
+                Radio Emanuel en vivo
             </h5>
         </div>
         
@@ -29,13 +29,13 @@
                             </span>
                             EN VIVO
                         </div>
-                        <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Radio Emanuel</h2>
-                        <p class="text-gray-600 text-lg">"Un mundo mejor"</p>
+                        <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Emanuel, Un mundo mejor</h2>
+                     
                     </div>
                     
                     <div class="mb-4">
-                        <p class="text-gray-700"><span class="font-semibold">Horario:</span> 07:00 - 23:00</p>
-                        <p class="text-gray-700"><span class="font-semibold">Frecuencia:</span> 105.3 FM</p>
+                        <p class="text-gray-700"><span class="font-semibold">Horario:</span> 06:00 - 23:00</p>
+                        <p class="text-gray-700"><span class="font-semibold">Frecuencia:</span> 100.1 FM</p>
                     </div>
 
                     <button id="playButton" onclick="toggleAudio()"
