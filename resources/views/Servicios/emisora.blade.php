@@ -70,102 +70,71 @@
 
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-    let audio = document.getElementById('radioStream');
-    let playButton = document.getElementById('playButton');
-    let playIcon = document.getElementById('playIcon');
-    let pauseIcon = document.getElementById('pauseIcon');
-    let buttonText = document.getElementById('buttonText');
-    let loadingIndicator = document.getElementById('loadingIndicator');
-    
-    // IMPORTANTE: Aquí debes colocar la URL de tu stream de audio
-    // Puedes usar una URL directa o la codificación Base64 como en el ejemplo original
-    // Ejemplo con URL directa:
-    let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
-    
-    // Ejemplo con Base64 (descomenta la siguiente línea si prefieres usar Base64)
-    // let streamUrl = atob("aHR0cHM6Ly9zMTQubXlyYWRpb3N0cmVhbS5jb20vMzE1OTIvbGlzdGVuLm1wMw==");
-    
-    // Estado del reproductor
-    let isPlaying = false;
-    let isLoading = false;
-    
-    // Configurar eventos del audio
-    audio.addEventListener('play', () => {
-        isPlaying = true;
-        updateButtonState();
-    });
-    
-    audio.addEventListener('pause', () => {
-        isPlaying = false;
-        updateButtonState();
-    });
-    
-    audio.addEventListener('waiting', () => {
-        isLoading = true;
-        loadingIndicator.classList.remove('hidden');
-        updateButtonState();
-    });
-    
-    audio.addEventListener('canplay', () => {
-        isLoading = false;
-        loadingIndicator.classList.add('hidden');
-    });
-    
-    audio.addEventListener('error', () => {
-        isLoading = false;
-        loadingIndicator.classList.add('hidden');
-        swal("Error", "No se pudo conectar con la emisora. Inténtelo más tarde.", "error");
-    });
-    
-    function toggleAudio() {
-        if (audio.src === "") {
-            // Primera vez que se hace clic
-            isLoading = true;
-            loadingIndicator.classList.remove('hidden');
-            audio.src = streamUrl;
-            audio.load(); // Forzar carga del stream
-            
-            audio.play()
-                .then(() => {
-                    // Éxito, manejado por los event listeners
-                })
-                .catch(error => {
-                    isLoading = false;
-                    loadingIndicator.classList.add('hidden');
-                    swal("Error", "No se pudo reproducir la emisora. Asegúrese de permitir la reproducción de audio.", "error");
-                });
-        } else {
-            if (audio.paused) {
-                audio.play();
-            } else {
-                audio.pause();
-            }
-        }
+let audio = document.getElementById('radioStream');
+let playButton = document.getElementById('playButton');
+let playIcon = document.getElementById('playIcon');
+let pauseIcon = document.getElementById('pauseIcon');
+let buttonText = document.getElementById('buttonText');
+let loadingIndicator = document.getElementById('loadingIndicator');
+
+let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
+let isPlaying = false;
+
+// Eventos del audio
+audio.addEventListener('play', () => {
+    isPlaying = true;
+    updateButtonState();
+});
+
+audio.addEventListener('pause', () => {
+    isPlaying = false;
+    updateButtonState();
+});
+
+audio.addEventListener('waiting', () => {
+    loadingIndicator.classList.remove('hidden');
+});
+
+audio.addEventListener('canplay', () => {
+    loadingIndicator.classList.add('hidden');
+});
+
+audio.addEventListener('error', () => {
+    loadingIndicator.classList.add('hidden');
+    swal("Error", "No se pudo conectar con la emisora. Inténtelo más tarde.", "error");
+});
+
+// Función para alternar reproducción
+function toggleAudio() {
+    if (!audio.src) {
+        audio.src = streamUrl;
+        audio.load();
     }
-    
-    function updateButtonState() {
-        if (isLoading) {
-            playButton.disabled = true;
-            playButton.classList.add('opacity-75');
-            return;
-        }
-        
-        playButton.disabled = false;
-        playButton.classList.remove('opacity-75');
-        
-        if (isPlaying) {
-            playButton.classList.remove("bg-blue-600", "hover:bg-blue-700");
-            playButton.classList.add("bg-red-600", "hover:bg-red-700");
-            buttonText.innerText = "Detener";
-            playIcon.classList.add("hidden");
-            pauseIcon.classList.remove("hidden");
-        } else {
-            playButton.classList.remove("bg-red-600", "hover:bg-red-700");
-            playButton.classList.add("bg-blue-600", "hover:bg-blue-700");
-            buttonText.innerText = "Escuchar en vivo";
-            playIcon.classList.remove("hidden");
-            pauseIcon.classList.add("hidden");
-        }
+
+    if (audio.paused) {
+        audio.play().catch(error => {
+            swal("Error", "No se pudo reproducir la emisora. Verifique su conexión.", "error");
+        });
+    } else {
+        audio.pause();
     }
+}
+
+// Función para actualizar el botón
+function updateButtonState() {
+    if (isPlaying) {
+        playButton.classList.replace("bg-blue-600", "bg-red-600");
+        playButton.classList.replace("hover:bg-blue-700", "hover:bg-red-700");
+        buttonText.innerText = "Detener";
+        playIcon.classList.add("hidden");
+        pauseIcon.classList.remove("hidden");
+    } else {
+        playButton.classList.replace("bg-red-600", "bg-blue-600");
+        playButton.classList.replace("hover:bg-red-700", "hover:bg-blue-700");
+        buttonText.innerText = "Escuchar en vivo";
+        playIcon.classList.remove("hidden");
+        pauseIcon.classList.add("hidden");
+    }
+}
 </script>
 @endsection
