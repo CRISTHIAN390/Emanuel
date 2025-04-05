@@ -186,7 +186,133 @@
                       </div>
                     </div>
                 </div>
-   
+
+<!--
+                <div class="flex flex-col bg-gradient-to-br from-blue-50 to-blue-100 p-6 lg:p-10 rounded-lg shadow-lg mt-8 border-2 border-yellow-300">
+                    <p class="text-center text-2xl font-bold mb-4 text-blue-800">DESCUENTO EXCLUSIVO SOLO PARA CLIENTES VIP</p>
+                
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 rounded-lg blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+                            <div class="relative flex items-center justify-center">
+                                <div id="contenedorNumero" class="bg-white p-2 rounded-lg shadow-lg flex items-center justify-center">
+                                    <div id="numeroAleatorio" class="text-6xl font-extrabold text-yellow-600 px-8 py-6">
+                                        --
+                                    </div>
+
+                                    <span class="text-4xl font-bold text-yellow-600 pb-1">%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-2">
+                            <button id="btnDescuento" 
+                                class="relative overflow-hidden bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold py-4 px-10 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-xl">
+                                <span class="relative z-10 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-5-4h10" />
+                                    </svg>
+                                    Obtener Descuento
+                                </span>
+                                <span class="absolute top-0 left-0 w-full h-full bg-white opacity-20 transform -skew-x-12 translate-x-full transition-transform duration-700 ease-in-out group-hover:translate-x-0"></span>
+                            </button>
+                            <p class="text-sm text-gray-600 italic">¡Haz clic y descubre tu descuento!</p>
+                        </div>
+                    </div>
+                    <div id="mensajeDescuento" class="mt-4 text-center hidden">
+                        <p id="textoDescuento" class="text-lg font-semibold text-green-600">¡Felicidades! Usa este descuento en tu próxima compra</p>
+                        <p id="validezDescuento" class="text-sm text-gray-600">Válido por 24 horas</p>
+                    </div>
+                </div>
+            -->               
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        let botonPulsado = false;
+                        const btnDescuento = document.getElementById('btnDescuento');
+                        const numeroAleatorio = document.getElementById('numeroAleatorio');
+                        const contenedorNumero = document.getElementById('contenedorNumero');
+                        const mensajeDescuento = document.getElementById('mensajeDescuento');
+                        const textoDescuento = document.getElementById('textoDescuento');
+                        const validezDescuento = document.getElementById('validezDescuento');
+                        
+                        // Valores posibles (solo para la animación visual)
+                        const valoresPosibles = [5, 10, 15, 20, 25, 30, 35, 40];
+                        let intervalo;
+                        
+                        btnDescuento.addEventListener('click', function() {
+                            if (botonPulsado) return;
+                            botonPulsado = true;
+                            mensajeDescuento.classList.add('hidden');
+                            contenedorNumero.classList.add('animate-pulse');
+                            const textoOriginal = btnDescuento.innerHTML;
+                            btnDescuento.innerHTML = '<span class="relative z-10">Generando...</span>';
+                            btnDescuento.disabled = true;
+                            btnDescuento.classList.add('cursor-not-allowed', 'opacity-80');
+                            let contador = 0;
+                            const duracionTotal = 40;
+                            intervalo = setInterval(() => {
+                                // Durante la animación, mostrar valores aleatorios del array
+                                const indiceAleatorio = Math.floor(Math.random() * valoresPosibles.length);
+                                numeroAleatorio.innerText = valoresPosibles[indiceAleatorio];
+                                contador++;
+                                const intervaloActual = contador < duracionTotal * 0.7 ? 100 : 
+                                                       contador < duracionTotal * 0.9 ? 150 : 250;
+                                if (contador >= duracionTotal) {
+                                    clearInterval(intervalo);
+                                    fetch('{{ route("generar.descuento") }}', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                                            'X-Requested-With': 'XMLHttpRequest'
+                                        },
+                                        body: JSON.stringify({})
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        // Mostrar el resultado del servidor
+                                        numeroAleatorio.innerText = data.descuento;
+                                        textoDescuento.innerText = data.mensaje;
+                                        validezDescuento.innerText = data.validez;
+                                        
+                                        // Quitar animación de pulso
+                                        contenedorNumero.classList.remove('animate-pulse');
+                                        
+                                        // Añadir animación de resultado final
+                                        numeroAleatorio.classList.add('scale-110');
+                                        setTimeout(() => {
+                                            numeroAleatorio.classList.remove('scale-110');
+                                        }, 500);
+                                        
+                                        // Mostrar mensaje de descuento
+                                        mensajeDescuento.classList.remove('hidden');
+                                        
+                                        // Restaurar botón
+                                        setTimeout(() => {
+                                            btnDescuento.innerHTML = textoOriginal;
+                                            btnDescuento.disabled = false;
+                                            btnDescuento.classList.remove('cursor-not-allowed', 'opacity-80');
+                                            botonPulsado = false;
+                                        }, 2000);
+                                    })
+                                    .catch(error => {
+                                        console.error('Error:', error);
+                                        // Restaurar en caso de error
+                                        numeroAleatorio.innerText = '--';
+                                        contenedorNumero.classList.remove('animate-pulse');
+                                        btnDescuento.innerHTML = textoOriginal;
+                                        btnDescuento.disabled = false;
+                                        btnDescuento.classList.remove('cursor-not-allowed', 'opacity-80');
+                                        botonPulsado = false;
+                                    });
+                                }
+                            }, 100);
+                        });
+                    });
+                </script>
+                
+
+
+                </div>               
             </div>
         </div>
     </div>

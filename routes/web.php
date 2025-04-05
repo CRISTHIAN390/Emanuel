@@ -27,7 +27,5 @@ Route::get('/emanuel/contact/consulta', [RutasController::class, 'Contacto'])->n
 Route::post('/emanuel/contact', [RutasController::class, 'Registro'])->name('consultas');
 
 
-
-
-
-
+// Ruta para generar el descuento (solo accesible vía Ajax)
+Route::post('/generar-descuento', [RutasController::class, 'generarDescuento'])->name('generar.descuento');

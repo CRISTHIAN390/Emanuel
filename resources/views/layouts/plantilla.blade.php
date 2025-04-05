@@ -353,6 +353,7 @@
         // Llamada a la función al cargar la página
         document.addEventListener('DOMContentLoaded', showWelcomeToast);
     </script>
+    <script src="{{ asset('js/configuracion.js') }}"></script>
 
 </body>
 

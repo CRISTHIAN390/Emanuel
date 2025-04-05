@@ -78,4 +78,48 @@ class RutasController extends Controller
     public function Emisoravivo() { 
         return view("Servicios.emisora");
     }
+
+    /**
+     * Generar un descuento aleatorio basado en probabilidades
+     */
+    public function generarDescuento(Request $request)
+    {
+        // Validar que sea una petición Ajax
+        if (!$request->ajax()) {
+            abort(403, 'Acceso no permitido');
+        }
+        // Valores posibles de descuento (escalonados)
+        $valoresPosibles = [5, 10, 15, 20, 25, 30, 35, 40];
+        
+        // Generar un número aleatorio entre 0 y 100 para determinar la probabilidad
+        $probabilidad = mt_rand(1, 1000) / 10; // Más preciso que random_int para decimales
+        // Aplicar la distribución de probabilidades
+        $descuento = $this->calcularDescuentoPorProbabilidad($probabilidad);
+        
+
+        // Devolver respuesta JSON
+        return response()->json([
+            'descuento' => $descuento,
+            'mensaje' => '¡Felicidades! Usa este descuento en tu próxima compra',
+            'validez' => 'Válido Triple G'
+        ]);
+    }
+    
+    /**
+     * Calcula el descuento basado en una tabla de probabilidades
+     */
+    private function calcularDescuentoPorProbabilidad($probabilidad)
+    {
+        // Distribución de probabilidades: 
+        if ($probabilidad < 35) return 5;
+        if ($probabilidad < 67) return 10;
+        if ($probabilidad < 80) return 15;
+        if ($probabilidad < 90) return 20;
+        if ($probabilidad < 94) return 25;
+        if ($probabilidad < 98) return 30;
+        if ($probabilidad < 99.5) return 35;
+        return 40; // El más raro
+    }
 }
+
+
