@@ -27,3 +27,7 @@ Route::get('/emanuel/contact/consulta', [RutasController::class, 'Contacto'])->n
 Route::post('/emanuel/contact', [RutasController::class, 'Registro'])->name('consultas');
 
 
+
+
+
+
