@@ -22,17 +22,17 @@
                             <div
                                 class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
                                 <div class="text-center">
-                                    <p class="text-lg font-semibold text-gray-800 mb-4">Características de nuestro complejo
+                                    <p class="text-lg text-gray-800 mb-4 font-bold  lg:text-left"">Características de nuestro complejo
                                         deportivo</p>
-                                    <ul class="list-disc list-inside text-justify text-gray-700 mt-4">
-                                        <li>Cancha de fútbol profesional con césped sintético</li>
-                                        <li>Zona de entrenamiento con equipos modernos</li>
-                                        <li>Espacios para eventos y actividades grupales</li>
-                                        <li>Vestuarios y duchas higiénicas</li>
-                                        <li>Seguridad constante</li>
+                                    <ul class="list-disc list-inside space-y-2 text-gray-700 text-justify ">
+                                        <li >Cancha de fútbol profesional con césped sintético</li>
+                                        <li >Zona de entrenamiento con equipos modernos</li>
+                                        <li >Espacios para eventos y actividades grupales</li>
+                                        <li >Vestuarios y duchas higiénicas</li>
+                                        <li >Seguridad constante</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> 
                             <!-- Texto sin tarjeta en pantallas pequeñas -->
                             <div class="lg:hidden text-gray-700 px-4">
                                 <p class="text-center text-lg font-semibold text-gray-800">Características de nuestro
@@ -67,13 +67,13 @@
                                 class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
                                 <p class="text-center">
                                     Ofrecemos horarios flexibles y paquetes especiales para eventos y entrenamientos
-                                    personalizados.
+                                    personalizados. Nuestro complejo se adapta a tus necesidades, brindando la mejor experiencia para la práctica deportiva.
                                 </p>
                             </div>
                             <!-- Texto sin tarjeta en pantallas pequeñas -->
                             <p class="text-center text-gray-700 px-4 lg:hidden">
                                 Ofrecemos horarios flexibles y paquetes especiales para eventos y entrenamientos
-                                personalizados.
+                                personalizados. Nuestro complejo se adapta a tus necesidades, brindando la mejor experiencia para la práctica deportiva.
                             </p>
                         </div>
                         
@@ -120,70 +120,110 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col bg-blue-700 p-6 lg:p-10 rounded-lg shadow-lg mt-8">
-                    <!-- Contenedor principal -->
-                    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-8 lg:space-y-0 lg:space-x-12">
-                      <!-- Información de reserva -->
-                      <div class="flex-1 space-y-4 ">
-                        <h3 class="text-2xl font-bold text-yellow-200  ">Datos del Complejo Deportivo Triple G</h3>
-                        <p class="text-base text-white">Teléfono: +51 949 931 907</p>
-                        <p class="text-base text-white">Ubicación: Trujillo, Perú</p>
-                        <p class="text-base text-white">
-                          Opiniones: 
-                          <a href="https://www.google.com/maps/place/?q=place_id:ChIJbe3fGdQXrZERTSaX2GuwWc8" class="text-blue-600 underline">
-                            <i><b class="text-white">(Leer las Opiniones)</b></i>
-                          </a>
-                        </p>
-                      </div>
-                  
-                      <!-- Botón de Google Maps con efecto 3D -->
-                      <div class="flex items-center justify-center lg:justify-center lg:flex-shrink-0">
-                        <a 
-                          href="https://www.google.com/maps/place/?q=place_id:ChIJbe3fGdQXrZERTSaX2GuwWc8" 
-                          target="_blank" 
-                          rel="nofollow noopener">
-                          <img 
-                            decoding="async" 
-                            loading="lazy" 
-                            class="w-48 sm:w-56 lg:w-72 h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-xl transform hover:rotate-2 hover:translate-y-1" 
-                            style="perspective: 1000px; transform-origin: center;" 
-                            src="https://portaltrujillo.com/wp-content/uploads/2025/01/google-maps-2961754.webp" 
-                            alt="Google Maps Button">
-                        </a>
-                      </div>
-                      
+
+                
+
+                <!-- Sección de contacto completamente rediseñada -->
+                <div class="mt-24 rounded-2xl overflow-hidden shadow-2xl">
+                    <!-- Header con degradado profesional -->
+                    <div class="bg-gradient-to-r from-blue-800 to-blue-600 p-8">
+                        <h5 class="text-2xl sm:text-3xl font-bold text-white mb-2"> Datos de Contacto</h5>
+                        <p class="text-blue-100">La mejor opción para tu actividad deportiva en Trujillo</p>
                     </div>
-                     
-                  
-                    <!-- Tabla de horarios -->
-                    <div class="mt-6">
-                      <h4 class="text-lg lg:text-xl font-bold text-yellow-200   mb-4">Horarios de Atención</h4>
-                      <div class="overflow-x-auto">
-                        <table class="table-auto w-full border border-gray-300 rounded-lg shadow-sm text-left text-sm lg:text-base">
-                          <thead class="bg-gray-200">
-                            <tr>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Lunes</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Martes</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Miércoles</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Jueves</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Viernes</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Sábado</th>
-                              <th class="px-4 py-2 text-gray-700 font-semibold">Domingo</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="border-t border-gray-300 bg-white">
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                              <td class="px-4 py-2 xl:text-md">4:00 pm – 11:00 pm</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                    
+                    <!-- Contenido principal -->
+                    <div class="bg-white">
+                        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                            <!-- Columna de información -->
+                            <div class="p-8">
+                                <div class="space-y-6">
+                                    <!-- Teléfono -->
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-900">Teléfono</p>
+                                            <p class="text-gray-600 mt-1">+51 949 931 907</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Ubicación -->
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-900">Ubicación</p>
+                                            <p class="text-gray-600 mt-1">Avenida Camino Real, Mz32 Lt.2,La Rinconada-Trujillo, Perú</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Opiniones -->
+                                    <div class="flex items-start">
+                                        <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-900">Opiniones</p>
+                                            <a href="https://www.google.com/maps/place/?q=place_id:ChIJbe3fGdQXrZERTSaX2GuwWc8" class="text-blue-600 hover:text-blue-800 transition duration-300 mt-1 inline-block">
+                                                Leer las Opiniones
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Tabla de horarios rediseñada -->
+                                <div class="mt-10">
+                                    <h4 class="text-xl font-bold text-gray-800 mb-4">Horarios de Atención</h4>
+                                    <div class="overflow-hidden rounded-xl border border-gray-200">
+                                        <table class="min-w-full divide-y divide-gray-200">
+                                            <thead class="bg-gray-50">
+                                                <tr>
+                                                    <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Días</th>
+                                                    <th scope="col" class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Horario</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="bg-white divide-y divide-gray-200">
+                                                <tr>
+                                                    <td class="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">Lunes a Domingo</td>
+                                                    <td class="px-4 py-3 whitespace-nowrap text-sm text-gray-700">4:00 pm – 11:00 pm</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Columna de mapa -->
+                            <div class="p-8 flex items-center justify-center">
+                                <a 
+                                    href="https://www.google.com/maps/place/?q=place_id:ChIJbe3fGdQXrZERTSaX2GuwWc8" 
+                                    target="_blank" 
+                                    rel="nofollow noopener"
+                                    class="relative group"
+                                >
+                                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                                    <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 via-blue-500 to-purple-600 rounded-xl blur opacity-0 group-hover:opacity-30 transition duration-1000 group-hover:duration-200"></div>
+                                    <div class="relative overflow-hidden rounded-xl shadow-xl">
+                                        <img 
+                                            decoding="async" 
+                                            loading="lazy" 
+                                            class="w-full max-w-md transition-transform duration-700 transform group-hover:scale-105" 
+                                            src="https://portaltrujillo.com/wp-content/uploads/2025/01/google-maps-2961754.webp" 
+                                            alt="Ubicación de Complejo Deportivo Triple G en Google Maps"
+                                        >
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -309,9 +349,6 @@
                         });
                     });
                 </script>
-                
-
-
                 </div>               
             </div>
         </div>
