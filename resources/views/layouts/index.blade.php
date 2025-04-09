@@ -232,6 +232,7 @@
                                 Ver más
                             </a>
                         </div>
+                        
                     </div>
 
                     <!-- Tarjeta 2 -->
