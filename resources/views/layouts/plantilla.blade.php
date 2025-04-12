@@ -199,7 +199,7 @@
     
     <!-- Cuerpo -->
     <section>
-        <div class="relative      min-h-screen flex   flex-col ">
+        <div class="relative  min-h-screen flex   flex-col ">
             @yield('contenido')
         </div>
         <a href="https://wa.me/917700319?text=Me%20gustaría%20consultar%20el%20informacion"
@@ -210,32 +210,32 @@
 
     <!-- Footer -->
     <footer>
-        <div class="w-full py-8" style="background: #ef8e00;">
-            <div
-                class="flex flex-col md:flex-row justify-center items-center md:space-x-16 space-y-4 md:space-y-0 text-white mx-auto px-4">
-
+        <div class="w-full py-8"  style="background: #ef8e00;">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 text-black">
                 <!-- Correo Electrónico -->
-                <div class="flex items-center space-x-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <div class="flex items-center gap-4 text-center md:text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M21 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2l9 5 9-5zm0 2.76l-9 5-9-5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7.24z" />
                     </svg>
                     <div>
-                        <p class="text-xl font-semibold text-black">Correo Electrónico</p>
-                        <p class="text-lg text-black">GEmanuel@grupoemanuelrlg.com</p>
+                        <p class="text-lg sm:text-xl font-semibold">Correo Electrónico</p>
+                        <p class="text-base sm:text-lg break-words">administracion@grupoemanuelrlg.com</p>
                     </div>
                 </div>
+        
                 <!-- Teléfono -->
-                <div class="flex items-center space-x-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                <div class="flex items-center gap-4 text-center md:text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.08-.21 11.72 11.72 0 0 0 3.7.6 1 1 0 0 1 1 1v3.22a1 1 0 0 1-1 1A16 16 0 0 1 3 5a1 1 0 0 1 1-1h3.18a1 1 0 0 1 1 1 11.72 11.72 0 0 0 .6 3.7 1 1 0 0 1-.21 1.08l-2.2 2.2z" />
                     </svg>
                     <div>
-                        <p class="text-xl font-semibold text-black">Llámanos</p>
-                        <p class="text-lg text-black">+51 949 931 907</p>
+                        <p class="text-lg sm:text-xl font-semibold">Llámanos</p>
+                        <p class="text-base sm:text-lg">+51 983 272 065</p>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <!-- Sección principal del footer -->
         <div class="w-full py-8 bg-gray-900 text-white" style="background: #000823">
@@ -268,8 +268,8 @@
                     <div class="w-full md:w-2/12">
                         <h2 class="text-lg font-semibold text-gray-200 mb-4">Contacto</h2>
                         <p class="text-gray-400 text-sm">Dirección: Avenida Camino Real, Mz32 Lt.2, Trujillo, Perú</p>
-                        <p class="text-gray-400 text-sm mt-2">Celular: +51 949 931 907</p>
-                        <p class="text-gray-400 text-sm mt-2">Correo: GEmanuel@grupoemanuelrlg.com</p>
+                        <p class="text-gray-400 text-sm mt-2">Celular: +51 983 272 065</p>
+                        <p class="text-gray-400 text-sm mt-2">Correo: administracion@grupoemanuelrlg.com</p>
                     </div>
 
                     <!-- Servicios -->
