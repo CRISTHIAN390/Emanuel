@@ -58,7 +58,7 @@
                     <div class="grid gap-6 lg:grid-cols-2 lg:space-x-6 animate__animated animate__fadeInUp mt-6">
                         <!-- Imagen -->
                         <div class="order-1 lg:order-1 flex justify-center">
-                            <img src="/img/Publicidad/imagencomplejo4.jpeg" alt="Complejo deportivo"
+                            <img src="/img/Publicidad/Comple1.jpg" alt="Complejo deportivo"
                                 class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl   hover:shadow-[#FFD700]">
                         </div>
                         <!-- Texto en tarjeta solo en pantallas grandes -->
