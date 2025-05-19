@@ -48,7 +48,7 @@ RUN npm install
 
 RUN npm run build
  
-# Exponer puerto 80
+# Exponer puerto 80  
 EXPOSE 80
 
 # Iniciar Apache
