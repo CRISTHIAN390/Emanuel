@@ -34,13 +34,19 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage
 
 # Instalar dependencias, generar key, cachear configs y build assets en un solo RUN
-RUN composer install --optimize-autoloader --no-dev \
-    && php artisan key:generate \
-    && php artisan config:cache \
-    && php artisan route:cache \
-    && php artisan view:cache \
-    && npm install --production \
-    && npm run build
+RUN composer install --optimize-autoloader --no-dev
+
+RUN php artisan key:generate
+
+RUN php artisan config:cache
+
+RUN php artisan route:cache
+
+RUN php artisan view:cache
+
+RUN npm install --production
+
+RUN npm run build
 
 # Exponer puerto 80
 EXPOSE 80
