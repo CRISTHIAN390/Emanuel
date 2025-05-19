@@ -42,11 +42,6 @@ RUN composer install --optimize-autoloader --no-dev \
     && npm install --production \
     && npm run build
 
-# Optimizaciones de Laravel
-RUN php artisan config:cache \
-    && php artisan route:cache \
-    && php artisan view:cache
-
 # Exponer puerto 80
 EXPOSE 80
 
