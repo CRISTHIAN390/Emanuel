@@ -44,10 +44,10 @@ RUN php artisan route:cache
 
 RUN php artisan view:cache
 
-RUN npm install --production
+RUN npm install
 
 RUN npm run build
-
+ 
 # Exponer puerto 80
 EXPOSE 80
 
