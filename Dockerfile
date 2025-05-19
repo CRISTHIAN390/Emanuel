@@ -29,6 +29,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Copiar archivos del proyecto
 COPY . .
 
+COPY .env.docker .env
+
+
+
 # Configurar permisos
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage
