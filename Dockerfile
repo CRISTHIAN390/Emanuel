@@ -36,7 +36,7 @@ RUN chown -R www-data:www-data /var/www/html \
 # Instalar dependencias, generar key, cachear configs y build assets en un solo RUN
 RUN composer install --optimize-autoloader --no-dev
 
-RUN php artisan key:generate
+#RUN php artisan key:generate
 
 RUN php artisan config:cache
 
