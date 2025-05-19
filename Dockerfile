@@ -33,11 +33,14 @@ COPY . .
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage
 
-# Instalar dependencias de Composer
-RUN composer install --optimize-autoloader --no-dev
-
-# Instalar dependencias de npm y construir assets
-RUN npm install && npm run build
+# Instalar dependencias, generar key, cachear configs y build assets en un solo RUN
+RUN composer install --optimize-autoloader --no-dev \
+    && php artisan key:generate \
+    && php artisan config:cache \
+    && php artisan route:cache \
+    && php artisan view:cache \
+    && npm install --production \
+    && npm run build
 
 # Optimizaciones de Laravel
 RUN php artisan config:cache \
