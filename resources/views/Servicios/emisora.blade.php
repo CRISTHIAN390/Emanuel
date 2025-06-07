@@ -76,7 +76,7 @@
     let pauseIcon = document.getElementById('pauseIcon');
     let buttonText = document.getElementById('buttonText');
     
-    let streamUrl = "https://s14.myradiostream.com/31592/listen.mp3";
+    let streamUrl = "https://s6.myradiostream.com/49872/listen.mp3";
     let isPlaying = false;
     
     // Eventos del audio
