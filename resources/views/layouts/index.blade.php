@@ -3,9 +3,9 @@
 @section('contenido')
 <div class="relative mt-4 bg-white">
     
-    <!-- Carrusel -->
+    <!-- Carrusel    h-[50vh] sm:h-[60vh] lg:h-[70vh] en el primer div-->
     <div
-        class="relative border-b-4 border-[#ffd900d4]  w-full h-[50vh] sm:h-[60vh] lg:h-[70vh] animate__animated animate__fadeIn">
+        class="relative  w-full  aspect-[16/9] border-b-4 border-[#ffd900d4]  animate__animated animate__fadeIn">
         <div class="overflow-hidden border-b-4 h-full w-full relative">
             <div class="flex transition-transform duration-300 h-full w-full" id="carousel">
                 <!-- Imagen 1 -->
