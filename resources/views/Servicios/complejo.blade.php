@@ -20,9 +20,9 @@
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <div class="text-center">
-                                    <p class="text-lg text-gray-800 mb-4 font-bold  lg:text-left"">Características de nuestro complejo
+                                    <p class="text-lg text-gray-800 mb-4 font-bold  lg:text-left">Características de nuestro complejo
                                         deportivo</p>
                                     <ul class="list-disc list-inside space-y-2 text-gray-700 text-justify ">
                                         <li >Cancha de fútbol profesional con césped sintético</li>
@@ -50,7 +50,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/complejo1.jpg" alt="Complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl   hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl transition-transform duration-500 transform  ">
                         </div>
                     </div>
 
@@ -59,12 +59,12 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-1 flex justify-center">
                             <img src="/img/Publicidad/Comple1.jpg" alt="Complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl   hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform ">
                         </div>
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-2 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl  text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:block hidden">
                                 <p class="text-center">
                                     Ofrecemos horarios flexibles y paquetes especiales para eventos y entrenamientos
                                     personalizados. Nuestro complejo se adapta a tus necesidades, brindando la mejor experiencia para la práctica deportiva.
@@ -84,7 +84,7 @@
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl  text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <div class="text-center">
                                     <p class="text-lg font-semibold text-gray-800 mb-4">Beneficios de nuestro complejo
                                         deportivo</p>
@@ -116,14 +116,16 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/imagencomplejo3.jpeg" alt="Ventajas del complejo deportivo"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:shadow-[#F00700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform ">
                         </div>
                     </div>
                 </div>
 
                 
 
-                <div class="flex flex-col bg-blue-700 p-6 lg:p-10 rounded-lg shadow-lg mt-8">
+<div class="flex flex-col bg-gradient-to-br from-black via-blue-700 to-blue-500
+    p-6 lg:p-10 rounded-xl shadow-2xl border border-white/10 mt-8">
+         
                     <!-- Contenedor principal -->
                     <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8">
                       
@@ -131,7 +133,7 @@
                       <div class="flex-1 space-y-3">
                         <h3 class="text-2xl font-bold text-white">Datos del Complejo Deportivo Triple G</h3>
                         <p class="text-base text-white">Teléfono: +51 949 931 907</p>
-                        <p class="text-base text-white">Ubicación: Trujillo, Perú</p>
+                        <p class="text-base text-white">📍 Estamos ubicados en Av. Camino Real Mz32 Lt 2, Urb. La Rinconada, Trujillo</p>
                         <p class="text-base text-white">
                           Opiniones: 
                           <a href="https://www.google.com/maps/place/?q=place_id:ChIJbe3fGdQXrZERTSaX2GuwWc8" class="text-blue-300 underline hover:text-white transition-colors duration-200">
@@ -150,7 +152,7 @@
                             decoding="async" 
                             loading="lazy" 
                             class="w-48 sm:w-56 lg:w-64 xl:w-72 h-auto rounded-xl shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:rotate-1 hover:translate-y-1"
-                            src="https://portaltrujillo.com/wp-content/uploads/2025/01/google-maps-2961754.webp" 
+                            src="/img/maps.png" 
                             alt="Google Maps Button">
                         </a>
                       </div>
@@ -161,7 +163,7 @@
                       <h4 class="text-lg lg:text-xl font-bold text-white mb-3">Horarios de Atención</h4>
                       <div class="bg-white rounded-lg shadow-md py-4 px-6 text-center text-gray-800">
                         <p class="font-semibold text-sm sm:text-base">Lunes - Domingo</p>
-                        <p class="text-sm sm:text-base mt-1">8:00 pm – 11:00 pm</p>
+                        <p class="text-sm sm:text-base mt-1">8:00 am – 11:00 pm</p>
                       </div>
                     </div>
                   </div>
