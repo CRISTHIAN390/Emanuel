@@ -22,7 +22,7 @@
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:block hidden">
                                 <div class="text-center">
                                     <p class="text-lg font-semibold text-gray-800 mb-4">
                                         Servicios de Lavado
@@ -48,7 +48,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/reparacionx.jpg" alt="Servicios de lavado de vehículos"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl transition-transform duration-500 transform ">
                         </div>
                     </div>
 
@@ -57,12 +57,12 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-1 flex justify-center">
                             <img src="/img/Publicidad/reparacionx.jpg" alt="Servicios de engrase"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl transition-transform duration-500 transform ">
                         </div>
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-2 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl  text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <p class="text-center">
                                     Servicio de engrase para mantener las piezas móviles de tu vehículo funcionando
                                     suavemente. Utilizamos aceites y lubricantes de alta calidad, específicos para cada tipo
@@ -85,7 +85,7 @@
                         <!-- Texto en tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-lg text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:block hidden">
                                 <div class="text-center">
                                     <p class="text-lg font-semibold text-gray-800 mb-4">Mantenimiento Preventivo</p>
                                     <ul class="list-disc list-inside text-justify text-gray-700 mt-4">
@@ -112,7 +112,7 @@
                         <!-- Imagen -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/reparacionx.jpg" alt="Servicios adicionales del servicentro"
-                                class="w-full rounded-xl shadow-lg transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform ">
                         </div>
                     </div>
                 </div>

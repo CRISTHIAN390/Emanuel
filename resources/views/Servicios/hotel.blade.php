@@ -20,7 +20,7 @@
                         <!-- Texto con tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-md text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <div class="text-center">
                                     <p class="text-lg font-semibold text-gray-800 mb-4">Servicios de Hospedaje</p>
                                     <ul class="list-disc list-inside text-justify text-gray-700">
@@ -50,7 +50,7 @@
                         <!-- Imagen con Efecto 3D y Brillo -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/hotel.jpg" alt="Hotel Emanuel"
-                                class="w-full rounded-xl shadow-md transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
                     </div>
 
@@ -59,13 +59,13 @@
                         <!-- Imagen con Efecto 3D y Brillo -->
                         <div class="order-1 lg:order-1 flex justify-center">
                             <img src="/img/Publicidad/hotel.jpg" alt="Servicios adicionales"
-                                class="w-full rounded-xl shadow-md transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform  hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
 
                         <!-- Texto con tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-2 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-md text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl  text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <p class="text-center">
                                     También contamos con instalaciones ideales para la organización de eventos como
                                     conferencias, bodas y celebraciones familiares. Nuestro equipo se encarga de cada
@@ -87,7 +87,7 @@
                         <!-- Texto con tarjeta solo en pantallas grandes -->
                         <div class="order-2 lg:order-1 flex items-center justify-center mt-6">
                             <div
-                                class="flex items-center justify-center p-6 bg-white rounded-xl shadow-md text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500 lg:hover:scale-105 lg:hover:shadow-2xl lg:block hidden">
+                                class="flex items-center justify-center p-6 bg-white rounded-xl text-gray-700 w-full lg:h-[300px] lg:transform lg:transition lg:duration-500  lg:block hidden">
                                 <div class="text-center">
                                     <p class="text-lg font-semibold text-gray-800 mb-4">Beneficios de alojarte en nuestro
                                         hotel</p>
@@ -115,7 +115,7 @@
                         <!-- Imagen con Efecto 3D y Brillo -->
                         <div class="order-1 lg:order-2 flex justify-center">
                             <img src="/img/Publicidad/hotel.jpg" alt="Ventajas del hotel"
-                                class="w-full rounded-xl shadow-md transition-transform duration-500 transform group-hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:shadow-[#FFD700]">
+                                class="w-full rounded-xl  transition-transform duration-500 transform  hover:brightness-110 hover:shadow-[#FFD700]">
                         </div>
                     </div>
                 </div>
